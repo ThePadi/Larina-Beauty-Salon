@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Larina Beauty Salon · salon kosmetyczny Mińsk Mazowiecki</title>
+<meta name="description" content="Salon kosmetyczny w Mińsku Mazowieckim, ul. Mireckiego 13A lok. 19. Manicure, pedicure, rzęsy, brwi, makijaż okolicznościowy i permanentny. Zapisy: 733 068 763 (telefon, SMS, WhatsApp).">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FBF7F4">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Larina Beauty Salon · Mińsk Mazowiecki">
+<meta property="og:description" content="Paznokcie, pedicure, rzęsy, brwi i makijaż permanentny. Ułóż wizytę z menu salonu i wyślij ją na WhatsApp.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:opsz,wght@9..144,300..600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Larina Beauty Salon","description":"Salon kosmetyczny: paznokcie, pedicure, rzęsy, brwi, makijaż okolicznościowy i permanentny.","image":"img/og.jpg","telephone":"+48733068763","email":"sergienkoira@gmail.com","address":{"@type":"PostalAddress","streetAddress":"ul. Mireckiego 13A lok. 19","postalCode":"05-300","addressLocality":"Mińsk Mazowiecki","addressCountry":"PL"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"16:00"}],"sameAs":["https://www.facebook.com/uIRINY","https://www.instagram.com/larina_beauty_salon/"]}
+</script>
+<style>
+:root{
+  --bg:#FBF7F4; --paper:#FFFFFF; --rose:#F2D4DC; --rose-l:#F8E8EC; --mag:#B0174F; --mag-d:#920F3F;
+  --gold:#B08A4E; --ink:#2A2224; --ink-2:#6A5C60; --line:#E9DED9; --line-2:#D9CBC6;
+  --tbc:#FFEB8A;
+  --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --navH:51px; --barH:0px; --gut:20px;
+  --ease:cubic-bezier(.25,.7,.2,1);
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M0 0L22 22L44 0V22L22 44L0 22Z' fill='%23F2D4DC'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:light;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--navH) + 16px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;padding-bottom:var(--barH)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--serif);font-weight:380;letter-spacing:-.015em;margin:0;font-optical-sizing:auto}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.tbc{background:var(--tbc);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .2em;border-radius:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tnum{font-variant-numeric:tabular-nums}
+svg.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:3px;border:1px solid transparent;font:600 16px/1.2 var(--sans);text-decoration:none;letter-spacing:.005em;transition:background-color .2s,color .2s,border-color .2s}
+.btn-main{background:var(--mag);color:#fff}
+.btn-main:hover{background:var(--mag-d)}
+.btn-sec{border-color:rgba(42,34,36,.35);color:var(--ink);background:transparent}
+.btn-sec:hover{border-color:var(--ink)}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;text-decoration:none;color:var(--ink);background:none;border:0;padding:0}
+.lnk span{border-bottom:1px solid var(--gold);padding-bottom:1px}
+.lnk svg{transition:transform .2s}
+.lnk:hover svg{transform:translateX(3px)}
+.mob-only{display:none!important}
+@media (hover:none) and (pointer:coarse){.mob-only{display:inline-flex!important}}
+
+/* ---------- header / nav ---------- */
+.brandbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--gold)}
+.brand svg{height:30px;width:auto;display:block}
+.bb-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:500 15px var(--sans);text-decoration:none;color:var(--ink)}
+#nav{position:sticky;top:0;z-index:40;background:rgba(251,247,244,.96);-webkit-backdrop-filter:saturate(1.2);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;position:relative}
+.nav-brand,.nav-cta{display:none}
+.tabs{display:flex;justify-content:space-between;flex:1;position:relative;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;min-height:50px;padding:0 4px;border:0;background:none;font:500 15px/1 var(--sans);color:var(--ink-2);white-space:nowrap;transition:color .2s}
+.tab[aria-selected=true]{color:var(--ink)}
+.ind{position:absolute;left:0;bottom:0;height:2px;width:100px;background:var(--mag);transform-origin:0 0;transition:transform .32s var(--ease);pointer-events:none}
+.tabs-more{display:none;position:absolute;right:0;top:0;bottom:1px;width:46px;border:0;padding:0 0 0 14px;background:linear-gradient(90deg,rgba(251,247,244,0),var(--bg) 40%);color:var(--ink);align-items:center;justify-content:center}
+.nav-in.over .tabs-more{display:flex}
+.nav-in.over .tabs{justify-content:flex-start;gap:18px;padding-right:44px}
+
+@media (min-width:1000px){
+  :root{--navH:76px;--gut:40px}
+  .brandbar{display:none}
+  #nav{background:rgba(251,247,244,.96)}
+  .nav-in{height:76px;gap:40px}
+  .nav-brand{display:inline-flex}
+  .nav-brand svg{height:38px}
+  .tabs{flex:0 1 auto;margin:0 auto;gap:34px;justify-content:center;overflow:visible}
+  .tab{min-height:76px;font-size:15.5px}
+  .nav-cta{display:inline-flex;min-height:46px;padding:0 20px;font-size:15px}
+  .nav-cta .cnt{display:none;min-width:22px;height:22px;border-radius:11px;background:#fff;color:var(--mag);font:700 13px/22px var(--sans);text-align:center;padding:0 6px}
+  .nav-cta.has .cnt{display:inline-block}
+}
+
+/* ---------- panels ---------- */
+main{overflow-x:clip;display:block}
+.panel{display:none}
+.panel.on{display:block}
+.panel.enter{animation:pin .3s var(--ease) both}
+@keyframes pin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.ph{padding:36px 0 24px;max-width:640px}
+.ph h2{font-size:40px;line-height:1.05}
+.ph p{margin-top:12px;color:var(--ink-2);font-size:16.5px}
+.sect{padding-bottom:72px}
+@media (min-width:1000px){
+  .ph{padding:80px 0 44px}
+  .ph h2{font-size:58px}
+  .sect{padding-bottom:110px}
+}
+
+/* ---------- START ---------- */
+.hero{padding:22px 0 0;display:grid;grid-template-areas:'txt' 'vis' 'act';row-gap:30px}
+.hero-txt{grid-area:txt}.vis{grid-area:vis}.hero-act{grid-area:act}
+.hero h1{font-size:42px;line-height:1.02;font-weight:360;letter-spacing:-.025em}
+.hero .lead{margin-top:18px;font-size:17.5px;line-height:1.55;color:var(--ink-2);max-width:31ch}
+.hero .ctas{display:flex;flex-direction:column;gap:10px}
+.hero .ctas .btn{width:100%}
+.hero-meta{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin-top:20px;font-size:15px;color:var(--ink-2)}
+.stars{display:inline-flex;gap:2px;color:#C59A45}
+.stars svg{width:15px;height:15px;fill:currentColor}
+.hm-rate{display:inline-flex;align-items:center;gap:8px;color:var(--ink)}
+.vis{position:relative;aspect-ratio:1/1.08;margin:0 calc(-1 * var(--gut)) 0 0}
+.chev{position:absolute;left:30%;right:0;top:30%;bottom:0;background:var(--chev) #fff;background-size:40px 40px;animation:rev .9s .15s var(--ease) both}
+@keyframes rev{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+.frame{position:absolute;left:0;top:0;width:64%;margin:0;aspect-ratio:4/5;background:var(--rose-l);box-shadow:0 30px 50px -30px rgba(42,34,36,.45)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.face{position:absolute;right:1%;top:0;width:30%;height:auto;color:var(--gold);animation:fin .8s .55s var(--ease) both}
+@keyframes fin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero-txt{animation:fin .6s var(--ease) both}
+
+.entries{margin-top:64px;border-top:1px solid var(--line-2)}
+.entry{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline;width:100%;padding:20px 0 22px;border:0;border-bottom:1px solid var(--line-2);background:none;text-align:left;text-decoration:none}
+.entry b{font:380 27px/1.1 var(--serif);letter-spacing:-.015em}
+.entry .from{font-size:15px;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.entry .from svg{color:var(--mag);transition:transform .2s}
+.entry:hover .from svg{transform:translateX(4px)}
+.entry small{grid-column:1/-1;font-size:15px;color:var(--ink-2)}
+
+.home-bottom{display:grid;gap:48px;margin-top:64px}
+.rate-line{display:flex;align-items:center;gap:12px;font-size:16px}
+.rate-line .stars svg{width:18px;height:18px}
+.rate-line b{font:400 30px/1 var(--serif)}
+.quotes{display:grid;gap:26px;margin-top:26px}
+.q{border-left:2px solid var(--rose);padding-left:18px}
+.q p{font:360 20px/1.4 var(--serif);letter-spacing:-.01em}
+.q cite{display:block;margin-top:10px;font:500 14px var(--sans);font-style:normal;color:var(--ink-2)}
+.today{background:var(--paper);padding:26px 24px;border-top:3px solid var(--rose)}
+.today .d{display:flex;align-items:center;gap:10px;font:600 17px var(--sans)}
+.dot{width:9px;height:9px;border-radius:50%;background:#2E8B57;flex:none}
+.dot.off{background:#B9AAA5}
+.today p{margin-top:8px;color:var(--ink-2);font-size:15.5px}
+.today .lnk{margin-top:10px}
+
+@media (min-width:700px) and (max-width:999.98px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'txt vis' 'act vis';grid-template-rows:auto 1fr;column-gap:36px;row-gap:28px;padding-top:44px}
+  .hero h1{font-size:48px!important}
+  .hero-txt{align-self:end}
+  .hero .ctas{flex-direction:column!important}
+  .hero .ctas .btn{width:100%!important}
+  .vis{max-width:none!important}
+}
+@media (min-width:700px){
+  .hero h1{font-size:56px}
+  .hero .ctas{flex-direction:row}
+  .hero .ctas .btn{width:auto}
+  .vis{max-width:560px;margin:0}
+}
+@media (min-width:1000px){
+  .hero{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);grid-template-areas:'txt vis' 'act vis';grid-template-rows:auto 1fr;column-gap:64px;row-gap:38px;padding:72px 0 0}
+  .hero-txt{align-self:end}
+  .hero h1{font-size:68px;max-width:none}
+  .hero .lead{font-size:19px;margin-top:26px}
+  .hero-meta{margin-top:30px}
+  .vis{width:100%;max-width:none;aspect-ratio:1/1.1;align-self:start}
+  .frame{width:64%}
+  .chev{left:32%;top:34%;right:0}
+  .entries{display:grid;grid-template-columns:repeat(4,1fr);margin-top:90px;border-top:1px solid var(--line-2)}
+  .entry{grid-template-columns:1fr;padding:30px 30px 34px 0;border-bottom:0;align-content:start}
+  .entry + .entry{border-left:1px solid var(--line-2);padding-left:30px}
+  .entry b{font-size:30px}
+  .entry small{grid-column:auto;grid-row:2;margin-top:8px}
+  .entry .from{grid-row:3;margin-top:18px}
+  .home-bottom{grid-template-columns:1.6fr 1fr;gap:80px;margin-top:96px;align-items:start}
+  .quotes{grid-template-columns:1fr 1fr;gap:40px}
+}
+
+/* ---------- MENU ---------- */
+.menu-grid{display:grid;gap:28px}
+.subs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.subtab{min-height:46px;border:0;background:var(--bg);font:500 15px/1.2 var(--sans);color:var(--ink-2);padding:4px 6px;transition:background-color .2s,color .2s}
+.subtab[aria-selected=true]{background:var(--rose);color:var(--ink)}
+.card{background:var(--paper);padding:30px 22px 34px;margin-top:16px;box-shadow:0 1px 0 var(--line)}
+.sub{display:none}
+.sub.on{display:block;animation:pin .3s var(--ease) both}
+.sub h3{font-size:30px;line-height:1.1}
+.sub .intro{margin-top:10px;color:var(--ink-2);font-size:15.5px;max-width:52ch}
+.grp{margin-top:26px;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.items{list-style:none;margin:14px 0 0;padding:0}
+.it{display:grid;grid-template-columns:minmax(0,max-content) minmax(14px,1fr) auto 40px;column-gap:10px;align-items:end;width:100%;min-height:58px;padding:10px 0;border:0;border-bottom:1px solid var(--line);background:none;text-align:left}
+.items li:last-child .it{border-bottom:0}
+.it .nm{font:500 16.5px/1.35 var(--sans);padding-bottom:1px}
+.it .ds{grid-column:1/4;grid-row:2;font:400 14px/1.4 var(--sans);color:var(--ink-2);margin-top:3px}
+.it .add{grid-row:1;grid-column:4;align-self:end!important;margin-bottom:-7px}
+.it:has(.ds) .add{grid-row:1/3;align-self:center!important;margin-bottom:0}
+.it .ld{align-self:end;border-bottom:2px dotted #CDBDB8;margin-bottom:7px;height:1px}
+.it .pr{font:500 16.5px/1.35 var(--sans);font-variant-numeric:tabular-nums;white-space:nowrap;padding-bottom:1px}
+.it .add{align-self:center;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--mag);color:var(--mag);display:grid;place-items:center;justify-self:end;transition:background-color .2s,color .2s,transform .2s}
+.it .add svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round}
+.it .add .ok{display:none}
+.it[aria-pressed=true] .add{background:var(--mag);color:#fff}
+.it[aria-pressed=true] .add .ok{display:block}
+.it[aria-pressed=true] .add .pl{display:none}
+.it[aria-pressed=true] .pr{color:var(--mag)}
+.it:active .add{transform:scale(.92)}
+.menu-note{margin-top:22px;font-size:14.5px;color:var(--ink-2)}
+.tbc-line{margin-top:14px;font-size:14.5px}
+@media (min-width:700px){.card{padding:40px 44px 44px}}
+@media (min-width:1000px){
+  .menu-grid{grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:start}
+  .subs{grid-template-columns:repeat(6,1fr)}
+  .card{padding:48px 56px 52px}
+  .sub h3{font-size:38px}
+}
+
+/* ---------- RECEIPT ---------- */
+#rcpt{filter:drop-shadow(0 14px 22px rgba(42,34,36,.10)) drop-shadow(0 1px 1px rgba(42,34,36,.10))}
+.paper{background:#fff;padding:30px 26px 40px;-webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
+.r-head{text-align:center;color:var(--gold);position:relative}
+.r-head svg{height:30px;width:auto;margin:0 auto}
+.r-head .bs{margin-top:8px;font:600 13px/1 var(--sans);letter-spacing:.3em;color:var(--ink)}
+.r-head .ad{margin-top:8px;font-size:13px;color:var(--ink-2)}
+.grab{display:none}
+.r-close{display:none;position:absolute;right:-12px;top:-16px;width:44px;height:44px;border:0;background:none;color:var(--ink);align-items:center;justify-content:center}
+.dash{border:0;border-top:1.5px dashed #D3C5C0;margin:20px 0}
+.r-t{display:flex;justify-content:space-between;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.r-items{list-style:none;margin:10px 0 0;padding:0}
+.r-items li{display:grid;grid-template-columns:1fr auto 40px;align-items:center;gap:8px;min-height:44px;font-size:15.5px;line-height:1.35;animation:fin .25s var(--ease) both}
+.r-items .p{font-variant-numeric:tabular-nums;white-space:nowrap}
+.r-x{width:40px;height:44px;border:0;background:none;color:var(--ink-2);display:grid;place-items:center;margin-right:-10px}
+.r-x:hover{color:var(--mag)}
+.r-empty{margin-top:12px;font-size:15px;color:var(--ink-2)}
+.r-sum{display:flex;justify-content:space-between;align-items:baseline;font:600 18px var(--sans)}
+.r-sum span:last-child{font:450 30px/1 var(--serif);font-variant-numeric:tabular-nums}
+.r-note{margin-top:8px;font-size:13px;line-height:1.45;color:var(--ink-2)}
+.r-f{border:0;padding:0;margin:20px 0 0}
+.r-f legend{padding:0;font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.chips{display:grid;gap:6px}
+.chips.d6{grid-template-columns:repeat(6,1fr)}
+.chips.d3{grid-template-columns:repeat(3,1fr)}
+.chips label{position:relative;display:grid;place-items:center;min-height:44px;border:1px solid var(--line-2);border-radius:3px;font:500 14px/1.1 var(--sans);text-align:center;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s;padding:0 2px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.chips input:checked + span{color:#fff}
+.chips label:has(input:checked){background:var(--ink);border-color:var(--ink);color:#fff}
+.chips label:has(input:disabled){opacity:.35;cursor:not-allowed}
+.chips label:has(input:focus-visible){outline:2px solid var(--mag);outline-offset:2px}
+.r-btns{display:grid;gap:8px;margin-top:24px}
+.r-btns .btn{width:100%}
+.r-btns .btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+.r-clear{justify-self:center;min-height:44px;border:0;background:none;color:var(--ink-2);font:500 14.5px var(--sans);text-decoration:underline;text-underline-offset:3px}
+.r-hint{margin-top:10px;font-size:13px;color:var(--ink-2);text-align:center}
+.scrim{display:none}
+@media (min-width:1000px){
+  #rcpt{position:sticky;top:calc(var(--navH) + 28px)}
+}
+@media (max-width:999.98px){
+  #rcpt{position:fixed;left:0;right:0;bottom:0;z-index:70;max-width:520px;margin:0 auto;transform:translateY(105%);visibility:hidden;transition:transform .38s var(--ease),visibility 0s .38s;filter:drop-shadow(0 -8px 24px rgba(42,34,36,.16))}
+  #rcpt.open{transform:none;visibility:visible;transition:transform .38s var(--ease),visibility 0s}
+  .paper{max-height:calc(100dvh - 56px);overflow-y:auto;overscroll-behavior:contain;padding:22px 22px calc(18px + env(safe-area-inset-bottom));
+    -webkit-mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
+  .grab{display:block;width:100%;height:44px;border:0;background:none;padding:0;margin:-20px 0 -4px;position:relative}
+  .grab::before{content:"";position:absolute;left:50%;top:18px;width:40px;height:4px;margin-left:-20px;border-radius:2px;background:#D9CBC6}
+  .r-head{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:12px}
+  .r-head svg{height:24px;margin:0}
+  .r-head .bs,.r-head .ad{display:none}
+  .r-close{display:flex;position:static;margin-right:-12px}
+  .dash{margin:14px 0}
+  .r-f{margin-top:16px}
+  .r-btns{grid-template-columns:1fr;margin-top:18px}
+  .r-hint{display:none}
+  .scrim{display:block;position:fixed;inset:0;z-index:65;background:rgba(42,34,36,.45);opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s;border:0;padding:0;width:100%}
+  .scrim.on{opacity:1;visibility:visible;transition:opacity .3s}
+}
+/* ---------- bottom bar ---------- */
+#bar{display:none}
+@media (max-width:999.98px){
+  :root{--barH:64px}
+  #bar{display:grid;grid-template-columns:1fr 1.35fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(251,247,244,.97);border-top:1px solid var(--line)}
+  #bar .btn{min-height:48px;padding:0 12px;font-size:15.5px;width:100%}
+  #bar .b-book .cnt{display:none}
+  #bar.has .b-book .lbl{display:none}
+  #bar.has .b-book .cnt{display:inline}
+  #bar.pulse .b-book{animation:pulse .5s var(--ease)}
+  @keyframes pulse{50%{transform:scale(1.035)}}
+}
+
+/* ---------- REALIZACJE ---------- */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:20px}
+.gi{display:block;padding:0;border:0;background:var(--rose-l);aspect-ratio:4/5;overflow:hidden;cursor:zoom-in}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.gi:hover img{transform:scale(1.03)}
+.gi[hidden]{display:none}
+.real .subs{grid-template-columns:repeat(3,1fr)}
+@media (min-width:1000px){
+  .gal{grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .real .subs{max-width:560px}
+}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(32,25,27,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,900px);max-height:80vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.lb button{position:absolute;width:52px;height:52px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb .x{top:14px;right:14px}
+.lb .pv{left:12px;top:50%;margin-top:-26px}
+.lb .nx{right:12px;top:50%;margin-top:-26px}
+.lb .c{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,.85);font:500 14px var(--sans);font-variant-numeric:tabular-nums}
+@media (max-width:699px){.lb .pv,.lb .nx{top:auto;bottom:10px;margin:0}.lb .c{bottom:26px}}
+
+/* ---------- O NAS ---------- */
+.about{display:grid;grid-template-areas:'a' 'fig' 'b';gap:32px}
+.about .ab-a{grid-area:a}.about figure{grid-area:fig}.about .txt{grid-area:b}
+.about figure{margin:0;position:relative}
+.about figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.about .txt p + p{margin-top:16px}
+.about .txt{font-size:16.5px}
+.about .big{font:360 24px/1.4 var(--serif);letter-spacing:-.01em;color:var(--ink);max-width:28ch}
+.pts{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line-2)}
+.pts li{padding:18px 0;border-bottom:1px solid var(--line-2);display:grid;grid-template-columns:34px 1fr;gap:0 10px}
+.pts .n{font:400 15px/1.6 var(--serif);color:var(--gold);font-variant-numeric:tabular-nums}
+.pts b{font-weight:600;display:block}
+.pts span{color:var(--ink-2);font-size:15.5px}
+@media (min-width:1000px){
+  .about{grid-template-columns:5fr 6fr;grid-template-areas:'fig a' 'fig b';grid-template-rows:auto 1fr;column-gap:80px;row-gap:24px;align-items:start}
+  .about .big{font-size:30px}
+  .about figure{position:sticky;top:calc(var(--navH) + 32px);grid-row:1/3}
+}
+
+/* ---------- OPINIE ---------- */
+.rev-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 24px}
+.rev-head .big{font:350 72px/0.9 var(--serif);letter-spacing:-.03em}
+.rev-head .stars svg{width:20px;height:20px}
+.rev-head .src{font-size:16px}
+.rev-head .src2{width:100%;color:var(--ink-2);font-size:15.5px}
+.revs{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-2)}
+.rv{padding:24px 0;border-bottom:1px solid var(--line-2)}
+.rv .stars svg{width:14px;height:14px}
+.rv p{margin-top:12px;font:360 19.5px/1.45 var(--serif);letter-spacing:-.005em}
+.rv cite{display:block;margin-top:12px;font:500 14px var(--sans);font-style:normal;color:var(--ink-2)}
+.rv cite b{color:var(--ink);font-weight:600}
+.rev-more{margin-top:28px}
+@media (min-width:1000px){
+  .revs{grid-template-columns:1fr 1fr;column-gap:64px;border-top:0}
+  .rv{border-top:1px solid var(--line-2);border-bottom:0;padding:30px 0 34px}
+}
+
+/* ---------- KONTAKT ---------- */
+.ct{display:grid;gap:44px}
+.ct-phone{font:350 44px/1 var(--serif);letter-spacing:-.02em;text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.ct-sub{margin-top:10px;color:var(--ink-2)}
+.ct-btns{display:grid;gap:8px;margin-top:22px}
+.ct-btns .btn{width:100%}
+.blk{margin-top:36px}
+.blk h3{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:9px 10px;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.now td{background:var(--rose-l);font-weight:600}
+.hours tr.now td:first-child::after{content:" · dziś";font-weight:500;color:var(--mag)}
+.mapbox{position:relative;background:var(--chev) #fff;background-size:40px 40px;min-height:300px;display:flex;align-items:center;justify-content:center;padding:28px 18px}
+.mapbox .mc{background:#fff;padding:26px 24px;max-width:340px;width:100%;box-shadow:0 20px 40px -24px rgba(42,34,36,.35)}
+.mapbox .mc p{font-size:15.5px;color:var(--ink-2)}
+.mapbox .mc b{display:block;font:400 22px/1.2 var(--serif);color:var(--ink);margin-bottom:6px}
+.mapbox .mc .row{display:grid;gap:8px;margin-top:18px}
+.mapbox .mc .btn{min-height:46px;font-size:15px;width:100%}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.socials{display:flex;flex-wrap:wrap;gap:4px 22px}
+@media (min-width:700px){.ct-btns{grid-template-columns:repeat(2,max-content)}.ct-btns .btn{width:auto}}
+@media (min-width:1000px){
+  .ct{grid-template-columns:1fr 1.05fr;gap:80px;align-items:start}
+  .ct-phone{font-size:60px}
+  .mapbox{min-height:520px;position:sticky;top:calc(var(--navH) + 32px)}
+}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:34px 0 38px;font-size:14.5px;color:var(--ink-2)}
+.f-in{display:grid;gap:12px}
+footer .brand svg{height:24px}
+footer nav{display:flex;flex-wrap:wrap;gap:0 22px}
+footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decoration:none;color:var(--ink)}
+@media (min-width:1000px){.f-in{grid-template-columns:auto 1fr auto;align-items:center;gap:40px}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wm" viewBox="0 0 652 226"><path fill="currentColor" fill-rule="evenodd" d="M363 42.2L362 42.5L362 42.8L365.8 45.2L368 47.3L370.5 52.5L371 56.7L371 160.5L370.5 167.3L369.3 170.8L366.7 174.7L362.8 177.7L365 178.3L368.8 178.7L381.2 178.7L389.5 178.2L390.7 177.7L388.2 175.8L383.8 171.5L382.3 165.7L382.3 55.8L383.5 50.5L384.7 48.3L389.2 44L392 43.2L393.2 42.3L390.7 41.8ZM227.5 42L227.8 42.7L230.2 42.7L234.2 43.8L238.2 46.8L239.8 48.8L241.3 52L241.8 55.3L241.7 165L240 171.2L237.8 173.5L234.8 175.8L232.5 177L227.3 177.8L227 178.3L227.5 178.8L244.2 179.2L263 178.8L265 178.2L259.7 175.3L256.2 172L255 169.8L254 165.5L254 48.8L255 47.2L256.5 46.8L279.8 46.3L285 47L287.8 48L293.5 51.5L297.3 55.3L301 61.5L302.8 67.3L303.8 73.8L303.8 83.7L302.2 92.2L299.3 97.8L296.3 101.7L291.5 105.7L288 107.7L281.2 109.7L275.5 110.3L263.8 110.8L262.8 111.3L264.7 112.5L271.5 119L272.3 120.3L281.7 130L283.3 132.5L287.7 137L288.8 138.8L293.3 142.8L295 145.2L304 154.2L307.3 158.5L310.7 161.3L312.5 164.7L317.5 169.5L327.2 180.8L330.7 184L333 187.3L336.8 191.2L340.7 193.8L343.3 196.7L349.7 202L356.3 206.2L365 210.5L373.5 213.2L377.3 213.8L382.5 213.7L386.8 214.2L391 213.8L395.2 212.8L395.3 212.5L384.8 210.5L374 206.2L372.3 204.8L368.3 203L367 201.5L361.5 197.8L356.2 192.8L353.2 190.7L328.2 165.3L326.2 162.7L322.8 159.5L321 156.8L293.2 127.3L291.3 124.7L288.3 121.8L286.2 118.5L284.8 117.3L284.5 116.3L285 115.7L296 113L298.5 111.8L304.5 107.3L309.8 101.5L314.8 92L316.7 83.5L317 72.7L315.8 66.7L314 60.8L312.5 59L311.3 56.5L308.3 53L303.5 48.7L297.3 45.3L293.3 44L288.8 43.3L286.8 42.5L252.3 41.7L231 41.7ZM390.8 61.5L389.8 67.8L390 75.2L390.5 77.5L392 79.5L403.3 92L410 98.7L412.2 101.7L431.2 121.5L432.3 123.5L463.7 156.2L481.3 175.5L486.8 181L488.2 181L487 160.8L487.3 52.7L489.7 47.8L492.7 45L496.8 43.2L502 42.8L502.5 42L501.3 41.3L465.3 41.5L463.5 42.2L464.5 42.8L468 43L471.8 44.2L474.5 46.3L476.3 48.5L478.3 53L478.7 57.8L478.8 142.7L478.5 150.7L477.8 151.5L476.5 151L474.2 149L467.3 142L463.5 137.5L453.3 127.2L447.7 120.7L427 99.2L394.2 63.8ZM7.2 42L7.7 42.8L11.3 43.2L14.8 44.3L19 48.2L21.2 52L21.8 60.2L21.7 165.5L20.8 169.3L19.8 171.3L16.7 174.7L12.5 176.8L7.3 177.5L6.8 178L7.3 179L17.7 180.7L31.3 184.7L51.2 193.3L78.7 206.7L90.5 211.2L95.2 212.3L96.3 213.2L107.8 215.5L116.3 216.5L118.5 217.7L121.5 218L123.2 218.7L135.2 218.8L145.8 217L153 215L159.3 212.7L165 210L175.8 203L175.7 202.2L174.7 202.2L170.5 203.8L159 206.8L145.5 208.5L131.5 208L118.3 206.3L117 205.8L114.8 206.3L111.5 206.2L106.8 205.2L104.7 203.5L103.3 203.5L100.5 202.2L97 201.5L95 200.5L92 199.8L43.5 183L38.5 180.2L36 177.7L34.8 175.2L34.3 171.8L34.2 56.2L35.2 50.8L37.2 47.7L41.5 44L44.2 43L46.8 42.7L47.3 42.2L34 41.3L8 41.5ZM143.3 39.2L139 51.5L128 76.5L122.2 91.7L121.2 93.2L115.8 106.8L114.7 108.8L105.3 131.3L102.2 141.2L102 144.8L100.5 145.8L98.7 151.8L97.2 153.5L95.8 156L95 158.8L91.2 166.8L88 171.3L81.7 176.3L76.5 178.2L87.3 178.7L100.2 177.7L100.8 176.5L100.8 174.5L99.8 171.3L100.3 163.7L102.3 157.7L104.5 155L106.3 151.8L114.8 132.2L116 131.3L135.3 131.2L167.2 131.3L169 132.5L174.7 146.5L182 167L182 171.2L180.5 174.2L178.8 176L177 177.2L173.3 178.3L180.8 179L203.5 179.2L215.2 178.8L215.3 177.8L208.7 176.7L204.7 174.5L201.5 171.8L197.8 166.2L177 117.3L160.3 76.8L159.2 75L157.8 70.8L155 64.8L153.5 60.3L144.7 40ZM142.5 63.3L144 65.7L152.8 88.8L156.7 100L165.2 121.8L165.7 125L164.3 125.8L118.7 125.8L117.8 125L118.7 121.7L140.8 65.8ZM572.3 39L568 51.7L563.3 61.7L558.7 73.7L532.3 136L531.3 139.3L519.7 166.5L516.7 171.2L511.3 175.7L508.2 176.8L503.3 177.7L502.5 178.3L503.7 178.8L535.2 179.2L539.2 179L539.8 178.5L539.7 177.7L537 177.3L534.8 176.5L532.5 174.5L531 171.3L530.8 167.8L532.2 162.7L544 132.7L545.2 131.7L596.8 131.5L598.2 132.3L599.5 135.2L607.7 156.3L611.3 167.7L611.3 170.2L610.8 172.2L608.7 175.2L606.5 176.8L602 177.7L602 178.8L634 179.2L644.5 178.7L644.7 178L644.2 177.7L639.7 177.2L635 175L630.5 171.2L628.5 168.3L625.8 163L615.7 139.2L610.7 126.3L592.3 83.3L576.7 45L574.2 39.5L573.5 38.8ZM572 63.8L572.8 64.8L594.2 121.5L595 124.7L594.2 125.5L591.5 125.7L548.3 125.5L547.5 124.8L547.5 124L569.2 68.7L571 64.5ZM375.5 6.7L372.7 7.8L370 10.3L368.5 13L368.5 16.7L369.7 19.2L372.5 21.8L375 23L377.2 23.2L380.7 21.7L383.7 19.2L384.8 16L384.8 13L383.2 9.8L381.5 8.2L377.7 6.7Z"/></symbol>
+  <symbol id="facepath" viewBox="0 0 384 472"><path fill="currentColor" fill-rule="evenodd" d="M14.7 6.7L10.8 9L9 11.2L8.3 12.7L7.2 18L7.3 26.5L8.3 33L10.5 39.7L14.2 46.3L20.7 54.8L20.8 55.8L20 56.2L17.7 54.8L14 51.2L12.3 50.3L10.5 50.3L9.3 50.8L8 52.5L8 54.7L10.8 62.3L15 68.2L18.7 71.7L25.3 75L28.5 76L29.7 77.7L29.2 85.3L28.2 90.7L22.5 108.5L20.7 116.7L19.3 125L18.5 134.2L18.3 149.8L19.5 163L22.5 179.5L26.2 192.5L30.3 203.3L34.5 213L54.3 254.5L60 268.5L65.8 284.7L66.5 287.5L72 301.2L74.2 307.7L82.5 327.8L90.5 345.3L99.8 362.7L104 368L107.8 372L118.7 379L130.8 383.8L138.3 385.3L146.3 386.3L164.7 386.2L185.5 382.8L192.7 381.2L205.2 377.3L208.5 376.8L209.2 377.8L210 384.3L216 406.5L230.2 462.5L231 464.7L232.2 466L234 466.5L235.8 466.2L237.5 464.7L237.5 461.8L217 381.8L216.3 377.8L216.8 374L220.2 372L225.3 370.5L233.2 367.2L241 364.7L252 359.7L256.8 358.3L258.3 357.2L261 356L267 354.2L271.2 351.5L277.3 349.8L286.5 345.3L291 343.7L315.3 331.3L318.7 329L321.5 327.8L325.8 324.8L329.2 323.2L341.7 314.7L352.5 306.5L363.5 297.2L373.5 287.5L376.8 283.8L378.7 279.8L378.8 276.2L378 273.8L376 271.5L374 270.2L367.5 268L358.2 267L352.5 267L338.7 268.3L325 271.7L314.7 274.8L306.5 278L304.5 279.3L302.3 280L290.5 285.7L284.2 289.8L278.8 292.5L275.8 295L265.2 302.3L258.3 308.2L257.3 309.7L254.2 311.7L251.2 315.2L249 316.7L241.3 325.5L237.8 328.7L236.7 330.8L234.3 332.7L232.7 335.3L230 338L221 350.3L212.7 364.5L210.8 368.7L209.3 370L192.7 375.2L177.8 378.7L169.7 380L158.7 380.8L144.8 380.7L134 378.8L128.7 377.2L123 374.7L115.3 370.2L110.2 365.7L104.8 358.2L98.5 347L97.7 344.5L94.5 338.3L86.7 320.7L80 304.2L65.2 262.7L61.3 253.5L59.8 251L57.5 244.8L46.3 222L35.2 196.3L31.2 183.8L28.2 171.2L26 155.2L25.8 133.2L27 121.7L29.5 108.8L34.8 91L36 83.5L36.8 82L37.8 82L40.2 83.5L42.7 84.5L44.3 84.7L50.7 87.3L56.8 87.3L63 88.2L67.5 88.2L73.2 87.5L82 85.5L89.5 85.3L95.3 86.2L97 87.5L96.7 93.7L94 107L90.5 117L89.3 122.5L86.5 130.2L83.5 136L80.3 144.5L77.2 150.8L70.8 166.8L68.5 175L67.7 183.7L68.3 189.2L70.5 194.8L72 197.5L76.5 203.3L85.8 210.3L93.5 214L96 215.7L97.8 220.7L98.5 224.2L102.5 235.3L107.7 247L107.7 247.8L107.2 248L102.5 245.8L97.7 244.8L93 245L89.8 246L83.8 250L78.7 256.5L74.5 260.7L74.5 263L76 266L77.5 267.5L80.2 269L81.7 270.7L84.8 284L86.7 288L88.3 290.5L93.8 295.3L98.5 297.8L104.2 300.2L113.8 302.5L119 303L130.3 303L136.5 302.3L145.5 300.3L155.3 296.8L163.5 292.7L169.5 288.8L183.7 278L189.2 272.7L195.8 267.2L198.2 264.5L199.2 262.7L199.2 261.8L198.3 260.8L196.7 260.2L186.8 259.8L179.7 258.8L176.8 257.7L173.2 257.2L132.5 246L125 245.5L116.8 246.8L115.7 246L114.3 244L110.2 235L107.2 227.3L104.3 217.5L105.2 216.5L108.5 215L110.7 212.3L111 210.7L110 205.5L110 203.5L111 201.2L114 198.7L119 197.2L122.7 197L128.3 198.8L129.8 200L131.3 202L131.7 205.2L130.5 208.2L127.2 212L127 213L127.7 214.5L128.5 215.3L130.8 216.2L138.8 215.5L145 213.3L149.7 210.5L152.7 208L157 203.2L159.7 197.3L160.3 194.7L160.3 191.7L159.3 187.3L157.5 183.8L155.2 181.5L153.2 178.5L147 174.8L141.8 172.5L132.5 169.5L128.5 168.7L115.3 167.2L105.8 167L101.5 168L98.5 169.7L96 172.8L93 180.5L92.3 185L92.3 193.7L93.7 206L92.5 206.5L87.5 203.7L83.2 199.8L80.2 196.5L76.8 191.2L75.3 187.3L74.8 183L75.2 177L76 172.7L78.7 164.5L87.8 140.8L88.8 139.2L90.2 134.3L94.5 123.3L95.5 119.3L97.2 115.2L98.7 109L99.7 107L102 93.5L102.8 91.3L103.2 87L103 77.3L101 68.5L99.3 65.5L97.7 61L95.3 56.8L90 50L86 46.2L86 45L87 43L87 39.8L85.7 36.5L82.3 33L77.5 29.2L57.5 19.3L53.2 17.8L49.2 15.8L44.7 14.5L40.8 12.7L35.3 11.2L33.2 9.7L21.5 6.3L18 6.2ZM371.5 277L371.7 279.3L370 282.2L362.2 290.2L354.7 296.7L352 299.5L331.3 315.5L305.8 331.2L294.5 336.5L292 338.2L286.8 340L280.7 343.5L269.5 347.8L256.8 353.7L221.7 365.7L220.8 365.7L220.3 365.2L226 354L228.2 351.2L229.8 347.8L240.2 333.2L243 330.5L246 326.8L255.7 317L263.7 310.3L269.5 304.8L272 303L273.7 302.3L280.2 297.5L283.7 295.8L287.7 292.8L301.8 285.7L313.8 280.7L320.5 278.8L322.5 277.8L335.3 274.7L346.2 273.2L360.7 273L368.5 274.7L370.3 275.7ZM184.8 268.8L184.7 269.7L179 275.2L175.2 277.3L171.8 280.3L161.5 287.2L155.2 290.5L146.5 294L138.3 296L129.7 297.2L117.8 297L112.2 296.2L105.7 294.3L98.7 291L94.8 287.7L92.5 284.2L90.2 277.8L89.5 272.8L90.5 271.8L98.5 271L104.7 271L114.3 272.5L121 272.5L129.2 271.2L136.8 269L148.8 269.8L161.5 269.8L171.5 268.8L177.7 268.8L184 268.2ZM120.8 252.5L123.2 251.7L128.7 251.5L136.5 252.8L143.5 255L166.5 260.5L171.7 262L172.3 263L171 263.7L165.3 264.3L151.2 264.3L141.8 263.3L135.2 261.7L129 259.3L122.7 255L121 253.5ZM82.5 262.2L86.5 256.5L89.7 253.2L92.8 251.2L94.5 250.7L97.2 250.7L100.8 252.2L106.7 255.5L108.2 255.8L112.8 255.7L113.5 256L117.7 260L124.3 264L125.2 265.2L124.5 265.8L120.7 266.7L114 266.7L109.8 266L99.5 265.3L89.5 266L84.8 264.7L82.7 263ZM101 176L103.7 172.5L106.7 171.7L116.8 171.7L125.2 172.5L138.3 176L145.5 179.8L151.8 185.3L153.7 188.7L154.2 190.8L154.3 194.2L153.5 197.8L150.2 203.5L144 208.8L140.3 210L137.8 210L137.2 209.3L137.7 202L136.2 198.2L135.2 197.2L129.5 193.8L125.8 192.5L122.2 191.8L119 192L112.7 193.3L107.7 196.2L104.5 199.8L102.2 206.5L101 204.3L100 198.7L99 187.2L99.5 181ZM85.2 74L85.8 74L89.5 77.3L90 79.2L89.2 80.3L86.3 80.7L83.5 80.3L82.8 79.8L83 78ZM20.3 63.5L21.8 63.2L23.5 63.8L25.7 63.8L27.2 64.5L28.3 66.2L28.5 68.8L27.3 69.3L23 66.8L20.5 64.3ZM36 64.5L41.7 63L45.7 62.8L46.5 63.5L46.8 73L48.5 79L47.8 80.2L45 79.7L39 75.5L36 69.8L35.2 66.7L35.2 65.7ZM55.3 60.5L58.2 60.3L63.8 60.8L66.8 61.8L70.7 62.3L74 63.7L77 65.7L77.8 66.8L78.5 69.7L78.3 74.5L76.5 78.7L74.3 81.3L70.8 83L65.3 83.7L61.5 82.3L56.7 79.3L54.7 77.5L52.8 74.2L52 68.2L52.8 63.8ZM32.7 58.3L32.8 57.2L35.3 54L40.3 51.8L43.2 51.3L52.8 51.3L57.2 51.8L67.7 54L71 56.2L70.3 56.8L65.5 56.2L51.3 56.3L40.7 59.2L34 59.3ZM13.5 21.7L14.7 21.3L18.3 23.3L22 24.5L27.7 27.2L41.5 31L59.3 37.2L69.7 43L74.2 44.8L82.5 50.5L85.3 54.5L88.2 57.2L91.2 63.3L92.3 64.8L93.8 68.7L93.3 69.5L92.5 68.8L90 63.7L83.3 55.8L76.7 51.8L66.5 48.5L59.2 47.3L53.2 47L41 47.3L34.8 48.8L29 53L27.5 53.2L18 41.5L15.5 36.5L13.5 29.5L13.2 26.7ZM16 12L17.3 11.2L20 11.2L27.7 12.8L30 14L36.5 16L40 17.8L51.7 22.5L53.2 23.5L59.5 25.8L61.7 27.3L69.8 31.2L76.8 36.2L79.8 39.2L79.8 39.8L79.2 40.5L78 40.5L71 36.5L64.3 34L61.2 32.2L56.3 31L49.3 28.3L47.7 28.2L42.7 26.2L36.5 24.5L34.5 23.5L30.8 22.8L27.2 21.5L19.3 17.7L16.3 14Z"/></symbol>
+  <symbol id="st" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></symbol>
+  <symbol id="arr" viewBox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M4 20l1.2-3.8A8.4 8.4 0 1 1 8 19z"/><path d="M9.2 8.6c.2 2.6 3 5.3 5.9 5.9l1.2-1.4-1.9-1-1 .8a5.6 5.6 0 0 1-2.3-2.3l.8-1-1-1.9z"/></symbol>
+  <symbol id="sms" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<div class="brandbar wrap">
+  <a class="brand" href="#start" data-tab="start" aria-label="Larina Beauty Salon, strona główna"><svg viewBox="0 0 652 226" aria-hidden="true"><use href="#wm"/></svg></a>
+  <a class="bb-call" href="tel:+48733068763"><svg class="ic" aria-hidden="true"><use href="#tel"/></svg>733 068 763</a>
+</div>
+
+<nav id="nav" aria-label="Zakładki">
+  <div class="wrap nav-in">
+    <a class="brand nav-brand" href="#start" data-tab="start" aria-label="Larina Beauty Salon, strona główna"><svg viewBox="0 0 652 226" aria-hidden="true"><use href="#wm"/></svg></a>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="start" aria-selected="true">Start</button>
+      <button class="tab" role="tab" data-tab="menu" aria-selected="false">Menu</button>
+      <button class="tab" role="tab" data-tab="realizacje" aria-selected="false">Realizacje</button>
+      <button class="tab" role="tab" data-tab="o-nas" aria-selected="false">O nas</button>
+      <button class="tab" role="tab" data-tab="opinie" aria-selected="false">Opinie</button>
+      <button class="tab" role="tab" data-tab="kontakt" aria-selected="false">Kontakt</button>
+      <span class="ind" id="ind" aria-hidden="true"></span>
+    </div>
+    <button class="tabs-more" id="tabsMore" aria-label="Więcej zakładek"><svg class="ic" aria-hidden="true"><use href="#arr"/></svg></button>
+    <button class="btn btn-main nav-cta" id="navCta" data-go="rcpt">Ułóż wizytę <span class="cnt" id="navCnt">0</span></button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ================= START ================= -->
+<section class="panel on" id="p-start" aria-label="Start">
+  <div class="wrap sect">
+    <div class="hero">
+      <div class="hero-txt">
+        <h1>Salon kosmetyczny w&nbsp;Mińsku Mazowieckim</h1>
+        <p class="lead">Paznokcie, pedicure, rzęsy, brwi i makijaż permanentny. Kilka zabiegów podczas jednej wizyty, przy kawie.</p>
+      </div>
+      <div class="hero-act">
+        <div class="ctas">
+          <button class="btn btn-main" data-tab="menu">Ułóż wizytę</button>
+          <a class="btn btn-sec" href="tel:+48733068763"><svg class="ic" aria-hidden="true"><use href="#tel"/></svg>Zadzwoń 733 068 763</a>
+        </div>
+        <div class="hero-meta">
+          <span class="hm-rate"><span class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span>5,0 z 39 opinii na Google</span>
+        </div>
+      </div>
+      <div class="vis" aria-hidden="false">
+        <div class="chev" aria-hidden="true"></div>
+        <figure class="frame"><img src="img/salon-wnetrze.jpg" width="1000" height="1250" alt="Wnętrze salonu Larina: stanowiska do manicure, rośliny i ściana w różową jodełkę"></figure>
+        <svg class="face" viewBox="0 0 384 472" aria-hidden="true"><use href="#facepath"/></svg>
+      </div>
+    </div>
+
+    <div class="entries">
+      <button class="entry" data-tab="menu" data-sub="dlonie"><b>Dłonie</b><span class="from">od 70 zł <svg class="ic" aria-hidden="true"><use href="#arr"/></svg></span><small>Manicure klasyczny, hybrydowy, żelowy, przedłużanie</small></button>
+      <button class="entry" data-tab="menu" data-sub="stopy"><b>Stopy</b><span class="from">od 40 zł <svg class="ic" aria-hidden="true"><use href="#arr"/></svg></span><small>Pedicure hybrydowy, opracowanie stóp, Zestaw MAX</small></button>
+      <button class="entry" data-tab="menu" data-sub="rzesy"><b>Rzęsy i brwi</b><span class="from">od 20 zł <svg class="ic" aria-hidden="true"><use href="#arr"/></svg></span><small>Przedłużanie i laminacja rzęs, regulacja i henna brwi</small></button>
+      <button class="entry" data-tab="menu" data-sub="makijaz"><b>Makijaż permanentny</b><span class="from">od 200 zł <svg class="ic" aria-hidden="true"><use href="#arr"/></svg></span><small>Brwi, usta, kreska. Najpierw omawiamy kształt i efekt</small></button>
+    </div>
+
+    <div class="home-bottom">
+      <div>
+        <div class="rate-line"><b>5,0</b><span class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><span>39 opinii na Google</span></div>
+        <div class="quotes">
+          <blockquote class="q" style="margin:0"><p>„Usługa kompleksowa: brwi, rzęsy, paznokcie. Kawa smakuje jak w najlepszym spa.”</p><cite>Marzena, Google</cite></blockquote>
+          <blockquote class="q" style="margin:0"><p>„Wielki plus za sterylność, czystość i dbałość o bezpieczeństwo podczas zabiegu.”</p><cite>Monika, Google</cite></blockquote>
+        </div>
+        <button class="lnk" data-tab="opinie" style="margin-top:18px"><span>Wszystkie opinie</span><svg class="ic" aria-hidden="true"><use href="#arr"/></svg></button>
+      </div>
+      <div class="today">
+        <div class="d"><i class="dot" id="tDot"></i><span id="tTxt">Pon–pt 7:30–21:00</span></div>
+        <p>ul. Mireckiego 13A lok. 19, Mińsk Mazowiecki<br>Zapisy: telefon, SMS i WhatsApp</p>
+        <button class="lnk" data-tab="kontakt"><span>Kontakt i dojazd</span><svg class="ic" aria-hidden="true"><use href="#arr"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="panel" id="p-menu" aria-labelledby="h-menu">
+  <div class="wrap sect">
+    <header class="ph">
+      <h2 id="h-menu">Menu salonu</h2>
+      <p>Jeśli nie wiesz jeszcze, na co się zdecydować, opowiedz nam, jaki efekt chciałabyś uzyskać, a wspólnie wybierzemy odpowiednią opcję.</p>
+      <p class="tbc-line"><span class="tbc">Cennik z grafiki sprzed ok. 2 lat, do potwierdzenia</span></p>
+    </header>
+    <div class="menu-grid">
+      <div>
+        <div class="subs" role="tablist" aria-label="Działy menu">
+          <button class="subtab" role="tab" data-sub="dlonie" aria-selected="true">Dłonie</button>
+          <button class="subtab" role="tab" data-sub="stopy" aria-selected="false">Stopy</button>
+          <button class="subtab" role="tab" data-sub="rzesy" aria-selected="false">Rzęsy</button>
+          <button class="subtab" role="tab" data-sub="brwi" aria-selected="false">Brwi</button>
+          <button class="subtab" role="tab" data-sub="makijaz" aria-selected="false">Makijaż</button>
+          <button class="subtab" role="tab" data-sub="dodatkowe" aria-selected="false">Dodatkowe</button>
+        </div>
+        <div class="card">
+          <div class="sub on" data-subpanel="dlonie">
+            <h3>Dłonie</h3>
+            <p class="intro">Ponad 300 kolorów lakierów. Możesz postawić na klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</p>
+            <ul class="items">
+              <li><button class="it" data-id="d1" data-name="Manicure hybrydowy" data-price="140" aria-pressed="false"><span class="nm">Manicure hybrydowy</span><span class="ld"></span><span class="pr">140 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="d2" data-name="Manicure żelowy" data-price="150" aria-pressed="false"><span class="nm">Manicure żelowy</span><span class="ld"></span><span class="pr">150 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="d3" data-name="Przedłużanie paznokci" data-price="180" aria-pressed="false"><span class="nm">Przedłużanie paznokci</span><span class="ld"></span><span class="pr">180 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="d4" data-name="Manicure klasyczny + malowanie" data-price="70" aria-pressed="false"><span class="nm">Manicure klasyczny + malowanie</span><span class="ld"></span><span class="pr">70 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+            <p class="grp">Dodatki</p>
+            <ul class="items">
+              <li><button class="it" data-id="d5" data-name="French / Baby boomer" data-price="20" aria-pressed="false"><span class="nm">French / Baby boomer</span><span class="ld"></span><span class="pr">20 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="d6" data-name="Naprawa paznokcia" data-price="10" aria-pressed="false"><span class="nm">Naprawa paznokcia</span><span class="ld"></span><span class="pr">10 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <div class="sub" data-subpanel="stopy">
+            <h3>Stopy</h3>
+            <p class="intro">Pedicure możesz połączyć z manicure albo z rzęsami i brwiami w czasie jednej wizyty.</p>
+            <ul class="items">
+              <li><button class="it" data-id="s1" data-name="Zestaw MAX (pedicure hybrydowy + opracowanie stóp + krem + masaż)" data-price="150" aria-pressed="false"><span class="nm">Zestaw MAX</span><span class="ld"></span><span class="pr">150 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><small class="ds">pedicure hybrydowy + opracowanie stóp + krem + masaż</small></button></li>
+              <li><button class="it" data-id="s2" data-name="Pedicure hybrydowy" data-price="130" aria-pressed="false"><span class="nm">Pedicure hybrydowy</span><span class="ld"></span><span class="pr">130 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="s3" data-name="Opracowanie stóp" data-price="40" aria-pressed="false"><span class="nm">Opracowanie stóp</span><span class="ld"></span><span class="pr">40 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <div class="sub" data-subpanel="rzesy">
+            <h3>Rzęsy</h3>
+            <p class="intro">Przy rzęsach zwracamy uwagę na to, co najlepiej pasuje do Twojej twarzy.</p>
+            <ul class="items">
+              <li><button class="it" data-id="r1" data-name="Henna rzęs" data-price="50" aria-pressed="false"><span class="nm">Henna rzęs</span><span class="ld"></span><span class="pr">50 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="r2" data-name="Laminacja rzęs + botoks + farbowanie" data-price="120" aria-pressed="false"><span class="nm">Laminacja rzęs + botoks + farbowanie</span><span class="ld"></span><span class="pr">120 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="r3" data-name="Przedłużanie rzęs 1:1" data-price="130" aria-pressed="false"><span class="nm">Przedłużanie rzęs 1:1</span><span class="ld"></span><span class="pr">130 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="r4" data-name="Przedłużanie rzęs 1:2" data-price="150" aria-pressed="false"><span class="nm">Przedłużanie rzęs 1:2</span><span class="ld"></span><span class="pr">150 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="r5" data-name="Przedłużanie rzęs 1:3" data-price="170" aria-pressed="false"><span class="nm">Przedłużanie rzęs 1:3</span><span class="ld"></span><span class="pr">170 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <div class="sub" data-subpanel="brwi">
+            <h3>Brwi</h3>
+            <p class="intro">Przy brwiach zwracamy uwagę na to, co najlepiej pasuje do Twojej twarzy.</p>
+            <ul class="items">
+              <li><button class="it" data-id="b1" data-name="Brwi: laminowanie + regulacja + henna" data-price="120" aria-pressed="false"><span class="nm">Laminowanie + regulacja + henna</span><span class="ld"></span><span class="pr">120 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="b2" data-name="Brwi: regulacja" data-price="20" aria-pressed="false"><span class="nm">Regulacja</span><span class="ld"></span><span class="pr">20 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="b3" data-name="Brwi: regulacja + henna" data-price="50" aria-pressed="false"><span class="nm">Regulacja + henna</span><span class="ld"></span><span class="pr">50 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <div class="sub" data-subpanel="makijaz">
+            <h3>Makijaż</h3>
+            <p class="grp">Okolicznościowy</p>
+            <ul class="items">
+              <li><button class="it" data-id="m1" data-name="Makijaż wieczorowy" data-price="140" aria-pressed="false"><span class="nm">Wieczorowy</span><span class="ld"></span><span class="pr">140 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+            <p class="grp">Permanentny</p>
+            <p class="intro">Przy makijażu permanentnym najpierw omawiamy kształt i efekt.</p>
+            <ul class="items">
+              <li><button class="it" data-id="m2" data-name="Makijaż permanentny brwi" data-price="400" aria-pressed="false"><span class="nm">Permanentny brwi</span><span class="ld"></span><span class="pr">400 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="m3" data-name="Makijaż permanentny ust" data-price="300" aria-pressed="false"><span class="nm">Permanentny ust</span><span class="ld"></span><span class="pr">300 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="m4" data-name="Makijaż permanentny kreski" data-price="200" aria-pressed="false"><span class="nm">Permanentny kreski</span><span class="ld"></span><span class="pr">200 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <div class="sub" data-subpanel="dodatkowe">
+            <h3>Dodatkowe usługi</h3>
+            <ul class="items">
+              <li><button class="it" data-id="x1" data-name="Depilacja woskiem (broda, wąsik)" data-price="30" aria-pressed="false"><span class="nm">Depilacja woskiem</span><span class="ld"></span><span class="pr">30 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><small class="ds">broda, wąsik</small></button></li>
+              <li><button class="it" data-id="x2" data-name="Parafinoterapia rąk" data-price="40" aria-pressed="false"><span class="nm">Parafinoterapia rąk</span><span class="ld"></span><span class="pr">40 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+            </ul>
+          </div>
+          <p class="menu-note">Dotknij +, żeby dodać zabieg do wizyty. Możesz łączyć zabiegi z różnych działów.</p>
+        </div>
+      </div>
+
+      <aside id="rcpt" aria-label="Twoja wizyta" aria-live="polite">
+        <div class="paper">
+          <button class="grab" id="rGrab" type="button" aria-label="Zwiń rachunek"></button>
+          <div class="r-head">
+            <svg viewBox="0 0 652 226" aria-hidden="true"><use href="#wm"/></svg>
+            <p class="bs">BEAUTY SALON</p>
+            <p class="ad">ul. Mireckiego 13A lok. 19 · Mińsk Mazowiecki</p>
+            <button class="r-close" id="rClose" aria-label="Zamknij rachunek"><svg class="ic" aria-hidden="true"><use href="#x"/></svg></button>
+          </div>
+          <hr class="dash">
+          <p class="r-t"><span>Twoja wizyta</span><span id="rCount">0 poz.</span></p>
+          <ol class="r-items" id="rItems"></ol>
+          <p class="r-empty" id="rEmpty">Dodaj zabiegi z menu przyciskiem +. Na przykład dłonie, rzęsy i brwi podczas jednej wizyty.</p>
+          <hr class="dash">
+          <div class="r-sum"><span>Suma</span><span id="rSum">0 zł</span></div>
+          <p class="r-note">Suma według cennika. Ostateczną cenę potwierdzamy przy zapisie.</p>
+          <fieldset class="r-f">
+            <legend>Preferowany dzień</legend>
+            <div class="chips d6" id="rDays">
+              <label><input type="radio" name="dz" value="poniedziałek"><span>Pon</span></label>
+              <label><input type="radio" name="dz" value="wtorek"><span>Wt</span></label>
+              <label><input type="radio" name="dz" value="środa"><span>Śr</span></label>
+              <label><input type="radio" name="dz" value="czwartek"><span>Czw</span></label>
+              <label><input type="radio" name="dz" value="piątek"><span>Pt</span></label>
+              <label><input type="radio" name="dz" value="sobota"><span>Sob</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="r-f">
+            <legend>Pora</legend>
+            <div class="chips d3" id="rTimes">
+              <label><input type="radio" name="pr" value="rano"><span>Rano</span></label>
+              <label><input type="radio" name="pr" value="po południu"><span>Po południu</span></label>
+              <label><input type="radio" name="pr" value="wieczorem"><span>Wieczorem</span></label>
+            </div>
+          </fieldset>
+          <div class="r-btns" id="rBtns">
+            <a class="btn btn-main" id="rWa" href="https://wa.me/48733068763" target="_blank" rel="noopener" aria-disabled="true"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg>Wyślij na WhatsApp</a>
+            <a class="btn btn-sec mob-only" id="rSms" href="sms:+48733068763" aria-disabled="true"><svg class="ic" aria-hidden="true"><use href="#sms"/></svg>Wyślij SMS</a>
+            <button class="r-clear" id="rClear" type="button">Wyczyść</button>
+          </div>
+          <p class="r-hint">Pon–pt 7:30–21:00, sob 8:00–16:00</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REALIZACJE ================= -->
+<section class="panel real" id="p-realizacje" aria-labelledby="h-real">
+  <div class="wrap sect">
+    <header class="ph">
+      <h2 id="h-real">Realizacje</h2>
+      <p>Zdjęcia prac z naszego salonu. Dotknij zdjęcia, żeby je powiększyć.</p>
+    </header>
+    <div class="subs" role="tablist" aria-label="Kategorie realizacji">
+      <button class="subtab" role="tab" data-sub="wszystkie" aria-selected="true">Wszystkie</button>
+      <button class="subtab" role="tab" data-sub="paznokcie" aria-selected="false">Paznokcie</button>
+      <button class="subtab" role="tab" data-sub="twarz" aria-selected="false">Rzęsy, brwi, usta</button>
+    </div>
+    <div class="gal" id="gal">
+      <button class="gi" data-cat="paznokcie"><img src="img/p-french-brokat.jpg" width="1000" height="1250" loading="lazy" alt="Długie migdałowe paznokcie, nude z brokatowym frenchem"></button>
+      <button class="gi" data-cat="twarz"><img src="img/t-brwi-pmu.jpg" width="1000" height="1250" loading="lazy" alt="Makijaż permanentny brwi"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-malinowy-brokat.jpg" width="1000" height="1250" loading="lazy" alt="Malinowe paznokcie z brokatem"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-french-pudrowy.jpg" width="750" height="937" loading="lazy" alt="Krótkie paznokcie, pudrowy french"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-nude-chrom.jpg" width="1000" height="1250" loading="lazy" alt="Kwadratowe paznokcie w beżowym odcieniu z połyskiem"></button>
+      <button class="gi" data-cat="twarz"><img src="img/t-rzesy.jpg" width="563" height="703" loading="lazy" alt="Przedłużane rzęsy, zbliżenie oka"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-fuksja-panterka.jpg" width="616" height="770" loading="lazy" alt="Paznokcie w kolorze fuksji ze wzorem w panterkę"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-babyboomer-zloto.jpg" width="1000" height="1250" loading="lazy" alt="Baby boomer ze złotymi końcówkami"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-czern-zdobienie.jpg" width="750" height="937" loading="lazy" alt="Czarne paznokcie ze zdobieniem"></button>
+      <button class="gi" data-cat="twarz"><img src="img/t-usta-pmu.jpg" width="563" height="703" loading="lazy" alt="Makijaż permanentny ust"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-french-klasyczny.jpg" width="1000" height="1250" loading="lazy" alt="Klasyczny biały french na paznokciach"></button>
+      <button class="gi" data-cat="paznokcie"><img src="img/p-ombre-roz.jpg" width="563" height="703" loading="lazy" alt="Paznokcie ombre w odcieniach różu"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O NAS ================= -->
+<section class="panel" id="p-o-nas" aria-labelledby="h-onas">
+  <div class="wrap sect">
+    <header class="ph"><h2 id="h-onas">O nas</h2></header>
+    <div class="about">
+      <p class="big ab-a">Czasem chcemy przygotować się na ważne wydarzenie, a czasem po prostu mamy ochotę zrobić coś dla siebie.</p>
+      <figure><img src="img/salon-polki.jpg" width="800" height="800" loading="lazy" alt="Złote półki z lakierami na ścianie w różowo-białą jodełkę"></figure>
+      <div class="txt">
+        <p>U nas możesz zadbać o kilka rzeczy podczas jednej wizyty albo wybrać tylko ten zabieg, którego akurat potrzebujesz. Zajmujemy się stylizacją paznokci, pedicure, brwiami, rzęsami oraz makijażem permanentnym.</p>
+        <p>Zależy nam na tym, żeby każda wizyta była spokojna i komfortowa. Chcemy, żebyś wyszła z salonu z efektem, który naprawdę Ci odpowiada, a nie z gotowym rozwiązaniem wybranym za Ciebie.</p>
+        <p>Mamy 8 lat doświadczenia i ponad 1000 klientek. W salonie pracują <span class="tbc">Larysa i Iryna</span>.</p>
+        <ul class="pts">
+          <li><span class="n">01</span><div><b>Sterylność i top materiały</b><span>Profesjonalizm i dobra atmosfera to nasz standard.</span></div></li>
+          <li><span class="n">02</span><div><b>Ponad 300 kolorów lakierów</b><span>Klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</span></div></li>
+          <li><span class="n">03</span><div><b>Kilka zabiegów podczas jednej wizyty</b><span>Dłonie, stopy, rzęsy i brwi za jednym razem albo tylko jeden zabieg.</span></div></li>
+          <li><span class="n">04</span><div><b>Przy kawie</b><span>Przy kawie doradzimy kolor, kształt i zabieg.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OPINIE ================= -->
+<section class="panel" id="p-opinie" aria-labelledby="h-op">
+  <div class="wrap sect">
+    <header class="ph">
+      <h2 id="h-op">Opinie</h2>
+    </header>
+    <div class="rev-head">
+      <span class="big">5,0</span>
+      <span class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span>
+      <span class="src">z 39 opinii na Google</span>
+      <span class="src2">100% poleca na Facebooku (25 opinii)</span>
+    </div>
+    <div class="revs">
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Hybryda trzymała się 4 tygodnie bez żadnego odprysku. Czysto, miło i profesjonalnie. Panie mają duży wybór kolorów i wzorów.”</p><cite><b>Ewelina</b> · manicure hybrydowy · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Super miejsce. Super dziewczyny, przy kawie doradzają, pomysły super mają.”</p><cite><b>Elżbieta</b> · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Bardzo polecam rzęsy, trzymają się mur beton!”</p><cite><b>Karolina</b> · rzęsy · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Dziewczyny są cudowne, przesympatyczne i tworzą tak ciepłą miłą atmosferę, że każda wizyta jest po prostu przyjemnością.”</p><cite><b>Ania</b> · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Dokładnie i precyzyjnie robią manicure i pedicure oraz rzęsy i brwi. Zawsze wychodzę zadowolona.”</p><cite><b>Marta</b> · manicure, pedicure, rzęsy, brwi · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Bardzo dokładnie zrobione wszystkie stylizacje, pomoc w doborze kolorów, miła i profesjonalna obsługa.”</p><cite><b>Mirka</b> · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="5 na 5"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Panie są przecudowne, usługa najwyższej jakości, a kawa pyszna. Ceny bardzo przystępne.”</p><cite><b>Sylwia</b> · Google</cite></article>
+      <article class="rv"><span class="stars" aria-label="Poleca"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><p>„Salonik piękny, profesjonalny, obsługa miła i rzeczowa. Zostałam wysłuchana i zaopiekowana.”</p><cite><b>Sylwia</b> · rzęsy · Facebook</cite></article>
+    </div>
+    <div class="rev-more">
+      <a class="btn btn-sec" href="https://www.google.com/maps/search/?api=1&amp;query=Larina+Beauty+Salon+Mireckiego+13A+Mi%C5%84sk+Mazowiecki" target="_blank" rel="noopener">Opinie w Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT ================= -->
+<section class="panel" id="p-kontakt" aria-labelledby="h-kt">
+  <div class="wrap sect">
+    <header class="ph">
+      <h2 id="h-kt">Kontakt</h2>
+      <p>Zapisy telefonicznie, SMS-em albo na WhatsApp. Zawsze czekamy na Was.</p>
+    </header>
+    <div class="ct">
+      <div>
+        <a class="ct-phone tnum" href="tel:+48733068763">733 068 763</a>
+        <p class="ct-sub">Telefon, SMS i WhatsApp. <span class="tbc">Czy zapis przez WhatsApp i SMS jest dla Was wygodny?</span></p>
+        <div class="ct-btns">
+          <a class="btn btn-main" href="tel:+48733068763"><svg class="ic" aria-hidden="true"><use href="#tel"/></svg>Zadzwoń</a>
+          <a class="btn btn-sec" href="https://wa.me/48733068763" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a>
+          <a class="btn btn-sec mob-only" href="sms:+48733068763"><svg class="ic" aria-hidden="true"><use href="#sms"/></svg>SMS</a>
+        </div>
+        <div class="blk">
+          <h3>Adres</h3>
+          <p>ul. Mireckiego 13A lok. 19<br>05-300 Mińsk Mazowiecki</p>
+        </div>
+        <div class="blk">
+          <h3>Godziny otwarcia</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Poniedziałek</td><td>7:30–21:00</td></tr>
+            <tr data-d="2"><td>Wtorek</td><td>7:30–21:00</td></tr>
+            <tr data-d="3"><td>Środa</td><td>7:30–21:00</td></tr>
+            <tr data-d="4"><td>Czwartek</td><td>7:30–21:00</td></tr>
+            <tr data-d="5"><td>Piątek</td><td>7:30–21:00</td></tr>
+            <tr data-d="6"><td>Sobota</td><td>8:00–16:00</td></tr>
+            <tr data-d="0"><td>Niedziela</td><td>zamknięte</td></tr>
+          </table>
+        </div>
+        <div class="blk">
+          <h3>Mail i social media</h3>
+          <p><a class="lnk" href="mailto:sergienkoira@gmail.com"><span class="tbc">sergienkoira@gmail.com</span></a></p>
+          <div class="socials">
+            <a class="lnk" href="https://www.facebook.com/uIRINY" target="_blank" rel="noopener"><span>Facebook</span></a>
+            <a class="lnk" href="https://www.instagram.com/larina_beauty_salon/" target="_blank" rel="noopener"><span>Instagram</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="mapbox">
+        <iframe title="Mapa dojazdu do Larina Beauty Salon" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Larina+Beauty+Salon+Mireckiego+13A+05-300+Mi%C5%84sk+Mazowiecki&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap f-in">
+    <a class="brand" href="#start" data-tab="start" aria-label="Larina Beauty Salon, strona główna"><svg viewBox="0 0 652 226" aria-hidden="true"><use href="#wm"/></svg></a>
+    <p>Larina Beauty Salon · ul. Mireckiego 13A lok. 19, Mińsk Mazowiecki</p>
+    <nav aria-label="Kontakt"><a href="tel:+48733068763">733 068 763</a><a href="https://www.facebook.com/uIRINY" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/larina_beauty_salon/" target="_blank" rel="noopener">Instagram</a></nav>
+  </div>
+</footer>
+
+<div id="bar">
+  <a class="btn btn-sec b-call" href="tel:+48733068763"><svg class="ic" aria-hidden="true"><use href="#tel"/></svg>Zadzwoń</a>
+  <button class="btn btn-main b-book" id="barBook"><span class="lbl">Ułóż wizytę</span><span class="cnt" id="barCnt"></span></button>
+</div>
+<button class="scrim" id="scrim" aria-label="Zamknij rachunek" tabindex="-1"></button>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <img id="lbImg" alt="">
+  <button class="x" id="lbX" aria-label="Zamknij"><svg class="ic" aria-hidden="true"><use href="#x"/></svg></button>
+  <button class="pv" id="lbP" aria-label="Poprzednie zdjęcie"><svg class="ic" aria-hidden="true" style="transform:scaleX(-1)"><use href="#arr"/></svg></button>
+  <button class="nx" id="lbN" aria-label="Następne zdjęcie"><svg class="ic" aria-hidden="true"><use href="#arr"/></svg></button>
+  <p class="c" id="lbC"></p>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var TABS = ['start','menu','realizacje','o-nas','opinie','kontakt'];
+  var DEF = {menu:'dlonie', realizacje:'wszystkie'};
+  var SUBS = {menu:['dlonie','stopy','rzesy','brwi','makijaz','dodatkowe'], realizacje:['wszystkie','paznokcie','twarz']};
+  var cur = {tab:null, sub:null};
+  var tabsEl = $('#tabs'), ind = $('#ind'), navIn = $('.nav-in');
+
+  function moveInd(){
+    var b = $('.tab[aria-selected=true]'); if (!b) return;
+    var x = b.offsetLeft, w = b.offsetWidth;
+    ind.style.transform = 'translateX(' + x + 'px) scaleX(' + (w / 100) + ')';
+  }
+  function checkOver(){
+    navIn.classList.remove('over');
+    if (window.innerWidth < 1000 && tabsEl.scrollWidth > tabsEl.clientWidth + 2) navIn.classList.add('over');
+    moveInd();
+  }
+  function keepActiveVisible(){
+    var b = $('.tab[aria-selected=true]'); if (!b) return;
+    var l = b.offsetLeft, r = l + b.offsetWidth, sl = tabsEl.scrollLeft, cw = tabsEl.clientWidth - (navIn.classList.contains('over') ? 46 : 0);
+    if (l < sl + 4) tabsEl.scrollTo({left: Math.max(0, l - 12), behavior: 'smooth'});
+    else if (r > sl + cw - 4) tabsEl.scrollTo({left: r - cw + 12, behavior: 'smooth'});
+  }
+  function parse(h){
+    h = (h || '').replace(/^#/, '');
+    var p = h.split('/'), t = p[0], s = p[1];
+    if (TABS.indexOf(t) < 0) t = 'start';
+    if (SUBS[t]) { if (SUBS[t].indexOf(s) < 0) s = DEF[t]; } else s = null;
+    return {tab:t, sub:s};
+  }
+  function setSub(tab, sub){
+    var panel = $('#p-' + tab);
+    $$('.subtab', panel).forEach(function(b){ b.setAttribute('aria-selected', b.dataset.sub === sub ? 'true' : 'false'); });
+    if (tab === 'menu') {
+      $$('.sub', panel).forEach(function(s){ s.classList.toggle('on', s.dataset.subpanel === sub); });
+    } else if (tab === 'realizacje') {
+      $$('.gi', panel).forEach(function(g){ g.hidden = !(sub === 'wszystkie' || g.dataset.cat === sub); });
+    }
+  }
+  function show(tab, sub, push){
+    var st = parse(tab + (sub ? '/' + sub : ''));
+    tab = st.tab; sub = st.sub;
+    var changedTab = cur.tab !== tab;
+    if (changedTab) {
+      $$('.panel').forEach(function(p){ p.classList.remove('on','enter'); });
+      var np = $('#p-' + tab);
+      np.classList.add('on');
+      void np.offsetWidth; np.classList.add('enter');
+      np.addEventListener('animationend', function f(ev){ if (ev.target === np) { np.classList.remove('enter'); np.removeEventListener('animationend', f); } });
+      $$('.tab').forEach(function(b){ b.setAttribute('aria-selected', b.dataset.tab === tab ? 'true' : 'false'); });
+      moveInd(); keepActiveVisible();
+    }
+    var changedSub = sub !== cur.sub;
+    if (sub) setSub(tab, sub);
+    if (changedTab || push === 'tab') window.scrollTo(0, 0);
+    else if (changedSub || push) {
+      var bar = $('#p-' + tab + ' .subs'), nb = $('#nav').getBoundingClientRect().bottom;
+      if (bar && bar.getBoundingClientRect().top < nb) window.scrollTo(0, window.scrollY + bar.getBoundingClientRect().top - nb - 10);
+    }
+    cur = {tab:tab, sub:sub};
+    if (push) { try { history.pushState(null, '', '#' + tab + (sub ? '/' + sub : '')); } catch (e) {} }
+    if (tab !== 'menu') closeSheet();
+  }
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('[data-tab]');
+    if (el) { e.preventDefault(); show(el.dataset.tab, el.dataset.sub || null, 'tab'); return; }
+    var sb = e.target.closest('.subtab');
+    if (sb) { var pid = sb.closest('.panel').id.slice(2); show(pid, sb.dataset.sub, true); }
+  });
+  window.addEventListener('popstate', function(){ var s = parse(location.hash); show(s.tab, s.sub, false); });
+  window.addEventListener('hashchange', function(){ var s = parse(location.hash); if (s.tab !== cur.tab || s.sub !== cur.sub) show(s.tab, s.sub, false); });
+  $('#tabsMore').addEventListener('click', function(){ tabsEl.scrollBy({left: 140, behavior: 'smooth'}); });
+  window.addEventListener('resize', checkOver);
+
+  /* ---------- today / hours (Europe/Warsaw) ---------- */
+  var HOURS = {1:[450,1260],2:[450,1260],3:[450,1260],4:[450,1260],5:[450,1260],6:[480,960],0:null};
+  var DN = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+  function warsawNow(){
+    try {
+      var f = new Intl.DateTimeFormat('en-GB', {timeZone:'Europe/Warsaw', weekday:'short', hour:'2-digit', minute:'2-digit', hourCycle:'h23'});
+      var parts = {}; f.formatToParts(new Date()).forEach(function(p){ parts[p.type] = p.value; });
+      var d = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(parts.weekday);
+      return {d:d, m: parseInt(parts.hour, 10) * 60 + parseInt(parts.minute, 10)};
+    } catch (e) { var n = new Date(); return {d:n.getDay(), m:n.getHours() * 60 + n.getMinutes()}; }
+  }
+  function fmt(m){ return Math.floor(m / 60) + ':' + ('0' + m % 60).slice(-2); }
+  (function(){
+    var n = warsawNow(), h = HOURS[n.d], txt, open = false;
+    if (h) { open = n.m >= h[0] && n.m < h[1]; txt = 'Dziś ' + fmt(h[0]) + '–' + fmt(h[1]) + (open ? ' · otwarte' : ' · teraz zamknięte'); }
+    else txt = 'Dziś zamknięte · w poniedziałek od 7:30';
+    $('#tTxt').textContent = txt;
+    $('#tDot').classList.toggle('off', !open);
+    var row = $('#hours tr[data-d="' + n.d + '"]'); if (row) row.classList.add('now');
+  })();
+
+  /* ---------- Ułóż wizytę ---------- */
+  var sel = [];
+  var rc = $('#rcpt'), rItems = $('#rItems'), bar = $('#bar'), scrim = $('#scrim');
+  var isSheet = function(){ return window.innerWidth < 1000; };
+  function plural(n){ return n === 1 ? 'zabieg' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 'zabiegi' : 'zabiegów'; }
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function val(name){ var i = $('input[name="' + name + '"]:checked'); return i ? i.value : ''; }
+  function message(){
+    var lines = ['Dzień dobry, chciałabym umówić wizytę w Larina Beauty Salon:'];
+    sel.forEach(function(s){ lines.push('- ' + s.name + ' (' + s.price + ' zł)'); });
+    lines.push('Suma według cennika: ' + total() + ' zł');
+    var d = val('dz'), p = val('pr');
+    if (d || p) lines.push('Preferowany termin: ' + [d, p].filter(Boolean).join(', ') + '.');
+    lines.push('Czy jest wolny termin?');
+    return lines.join('\n');
+  }
+  function total(){ return sel.reduce(function(a, s){ return a + s.price; }, 0); }
+  function render(){
+    rItems.innerHTML = sel.map(function(s){
+      return '<li><span>' + esc(s.name) + '</span><span class="p">' + s.price + ' zł</span><button class="r-x" type="button" data-rm="' + s.id + '" aria-label="Usuń: ' + esc(s.name) + '"><svg class="ic" aria-hidden="true"><use href="#x"/></svg></button></li>';
+    }).join('');
+    var n = sel.length, t = total();
+    $('#rEmpty').hidden = n > 0;
+    $('#rSum').textContent = t + ' zł';
+    $('#rCount').textContent = n ? n + ' poz.' : '';
+    $$('.it').forEach(function(b){ b.setAttribute('aria-pressed', sel.some(function(s){ return s.id === b.dataset.id; }) ? 'true' : 'false'); });
+    var msg = encodeURIComponent(message());
+    var wa = $('#rWa'), sms = $('#rSms');
+    wa.href = 'https://wa.me/48733068763?text=' + msg;
+    sms.href = 'sms:+48733068763?&body=' + msg;
+    wa.setAttribute('aria-disabled', n ? 'false' : 'true');
+    sms.setAttribute('aria-disabled', n ? 'false' : 'true');
+    bar.classList.toggle('has', n > 0);
+    $('#barCnt').textContent = 'Twoja wizyta · ' + n + ' · ' + t + ' zł';
+    var nc = $('#navCta'); nc.classList.toggle('has', n > 0); $('#navCnt').textContent = n;
+  }
+  function toggle(btn){
+    var id = btn.dataset.id, i = -1;
+    sel.forEach(function(s, k){ if (s.id === id) i = k; });
+    if (i >= 0) sel.splice(i, 1);
+    else sel.push({id:id, name:btn.dataset.name, price:parseInt(btn.dataset.price, 10)});
+    render();
+    if (i < 0) { bar.classList.remove('pulse'); void bar.offsetWidth; bar.classList.add('pulse'); }
+  }
+  $$('.it').forEach(function(b){ b.addEventListener('click', function(){ toggle(b); }); });
+  rItems.addEventListener('click', function(e){
+    var b = e.target.closest('[data-rm]'); if (!b) return;
+    sel = sel.filter(function(s){ return s.id !== b.dataset.rm; }); render();
+  });
+  $('#rClear').addEventListener('click', function(){
+    sel = []; $$('#rcpt input').forEach(function(i){ i.checked = false; }); syncTimes(); render();
+  });
+  function syncTimes(){
+    var sat = val('dz') === 'sobota', ev = $('#rTimes input[value="wieczorem"]');
+    ev.disabled = sat; if (sat && ev.checked) ev.checked = false;
+  }
+  $$('#rcpt input').forEach(function(i){ i.addEventListener('change', function(){ syncTimes(); render(); }); });
+  function openSheet(){ if (!isSheet()) return; rc.classList.add('open'); scrim.classList.add('on'); document.body.style.overflow = 'hidden'; }
+  function closeSheet(){ rc.classList.remove('open'); scrim.classList.remove('on'); document.body.style.overflow = ''; }
+  $('#rClose').addEventListener('click', closeSheet);
+  $('#rGrab').addEventListener('click', closeSheet);
+  (function(){ var y0 = null, pap = $('#rcpt .paper');
+    pap.addEventListener('touchstart', function(e){ y0 = pap.scrollTop <= 0 ? e.touches[0].clientY : null; }, {passive:true});
+    pap.addEventListener('touchend', function(e){ if (y0 !== null && e.changedTouches[0].clientY - y0 > 70) closeSheet(); y0 = null; });
+  })();
+  scrim.addEventListener('click', closeSheet);
+  $('#barBook').addEventListener('click', function(){
+    if (sel.length) { if (cur.tab !== 'menu') show('menu', null, true); openSheet(); }
+    else show('menu', null, true);
+  });
+  $('#navCta').addEventListener('click', function(){ if (cur.tab !== 'menu') show('menu', null, true); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && rc.classList.contains('open')) closeSheet(); });
+  window.addEventListener('resize', function(){ if (!isSheet()) closeSheet(); });
+
+  /* ---------- lightbox ---------- */
+  var lb = $('#lb'), lbImg = $('#lbImg'), list = [], li = 0;
+  function lbShow(){ var im = list[li]; lbImg.src = im.currentSrc || im.src; lbImg.alt = im.alt; $('#lbC').textContent = (li + 1) + ' / ' + list.length; }
+  function lbOpen(btn){ list = $$('#gal .gi').filter(function(g){ return !g.hidden; }).map(function(g){ return g.querySelector('img'); }); li = list.indexOf(btn.querySelector('img')); lbShow(); lb.classList.add('on'); document.body.style.overflow = 'hidden'; $('#lbX').focus(); }
+  function lbClose(){ lb.classList.remove('on'); document.body.style.overflow = ''; }
+  function lbStep(d){ li = (li + d + list.length) % list.length; lbShow(); }
+  $$('#gal .gi').forEach(function(g){ g.addEventListener('click', function(){ lbOpen(g); }); });
+  $('#lbX').addEventListener('click', lbClose);
+  $('#lbP').addEventListener('click', function(){ lbStep(-1); });
+  $('#lbN').addEventListener('click', function(){ lbStep(1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) lbClose(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('on')) return;
+    if (e.key === 'Escape') lbClose(); else if (e.key === 'ArrowRight') lbStep(1); else if (e.key === 'ArrowLeft') lbStep(-1);
+  });
+  var tx = null;
+  lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){ if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) lbStep(dx < 0 ? 1 : -1); tx = null; });
+
+  /* ---------- init ---------- */
+  render();
+  var s0 = parse(location.hash);
+  cur = {tab:null, sub:null};
+  show(s0.tab, s0.sub, false);
+  checkOver();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(checkOver);
+  window.addEventListener('load', checkOver);
+})();
+</script>
+</body>
+</html>
