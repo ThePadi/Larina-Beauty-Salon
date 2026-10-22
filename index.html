@@ -115,10 +115,10 @@ main{overflow-x:clip;display:block}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#C40E62 0%,#B00B58 60%,#9E0950 100%);mix-blend-mode:multiply;opacity:.6}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(110deg,rgba(255,255,255,0) 35%,rgba(255,255,255,.30) 48%,rgba(255,255,255,0) 61%);background-size:320% 100%;background-position:110% 0;mix-blend-mode:soft-light;animation:sheen 2.8s .35s ease-in-out both}
 @keyframes sheen{from{background-position:110% 0}to{background-position:-10% 0}}
-.hero-in{display:grid;justify-items:center;text-align:center;padding:0 var(--gut) 56px;max-width:1180px;margin:0 auto}
+.hero-in{display:grid;justify-items:center;text-align:center;padding:0 var(--gut);max-width:1180px;margin:0 auto}
 .hero-txt{min-height:calc(100svh - 115px - var(--barH));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 0 26px;width:100%}
-.hero-logo{width:min(270px,72vw);height:auto;color:#fff;display:block;animation:fin .9s .1s var(--ease) both}
-.hero h1{text-shadow:0 1px 18px rgba(110,0,40,.25);margin-top:24px;font-size:36px;line-height:1.06;font-weight:380;letter-spacing:-.02em;color:#fff}
+.hero-logo{width:min(310px,80vw);height:auto;color:#fff;display:block;animation:fin .9s .1s var(--ease) both}
+.hero h1{text-shadow:0 1px 18px rgba(110,0,40,.25);margin-top:26px;font-size:37px;line-height:1.06;font-weight:380;letter-spacing:-.02em;color:#fff}
 .hero .lead{margin-top:14px;font-size:16.5px;line-height:1.55;color:#fff;max-width:30ch}
 .hero .ctas{display:grid;gap:10px;margin-top:26px;width:100%;max-width:360px}
 .hero .ctas .btn{width:100%}
@@ -139,7 +139,19 @@ main{overflow-x:clip;display:block}
 .entry small{grid-column:1/-1;font-size:15px;color:var(--ink-2)}
 .sec-t{font:400 30px/1.1 var(--serif);letter-spacing:-.015em;margin:52px 0 6px}
 
-.band{background:var(--band);color:#fff;margin-top:64px;padding:52px 0 56px}
+.why{background:#fff;margin-top:64px;padding:52px 0 56px;border-top:6px solid var(--mag)}
+.why h2{font:400 34px/1.08 var(--serif);letter-spacing:-.02em}
+.why h2 em{font-style:normal;color:var(--mag-d)}
+.why .why-lead{margin-top:12px;color:var(--ink-2);font-size:16.5px;max-width:40ch}
+.why-list{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:0}
+.why-list li{padding:22px 0 24px;border-top:1px solid var(--line)}
+.why-list li:first-child{border-top:0;padding-top:4px}
+.why-list b{display:block;font:400 25px/1.22 var(--serif);letter-spacing:-.015em;color:var(--ink)}
+.why-list b strong{font-weight:540;color:var(--mag-d)}
+.why-list span{display:block;margin-top:8px;font-size:15.5px;color:var(--ink-2);max-width:40ch}
+.why-list li::before{content:"";display:block;width:34px;height:3px;background:var(--mag);margin-bottom:14px}
+.band{background:var(--band);color:#fff;padding:52px 0 56px}
+.band-t{font:400 32px/1.1 var(--serif);letter-spacing:-.015em;color:#fff}
 .rate-line{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:16px;font-weight:500}
 .rate-line .stars{color:#fff}
 .rate-line .stars svg{width:18px;height:18px}
@@ -159,18 +171,24 @@ main{overflow-x:clip;display:block}
 #p-start .sect{padding-bottom:64px}
 
 @media (min-width:700px){
+  .hero h1 .l2{display:block}
   .hero .ctas{grid-template-columns:auto auto;width:auto;max-width:none}
   .hero .ctas .btn{width:auto}
 }
 @media (min-width:1000px){
-  .hero-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);column-gap:72px;align-items:center;justify-items:start;text-align:left;padding:0 var(--gut);min-height:calc(100vh - var(--navH));min-height:calc(100svh - var(--navH))}
   .hero{background-position:center 28%}
-  .hero-txt{min-height:0;align-items:flex-start;padding:64px 0}
-  .hero-logo{width:390px}
-  .hero h1{font-size:60px;max-width:none;margin-top:36px}
-  .hero .lead{font-size:19px;max-width:34ch;margin-top:18px}
-  .hero .ctas{margin-top:34px}
-  .hero-meta{margin-top:26px}
+  .hero-in{min-height:calc(100vh - var(--navH));min-height:calc(100svh - var(--navH));align-content:center;padding:0 var(--gut)}
+  .hero-txt{min-height:0;padding:64px 0 72px}
+  .hero-logo{width:560px}
+  .hero h1{font-size:64px;max-width:none;margin-top:40px}
+  .hero .lead{font-size:19.5px;max-width:40ch;margin-top:18px}
+  .hero .ctas{margin-top:36px}
+  .hero-meta{margin-top:28px}
+  /* wariant ze zdjęciem: dodaj klasę has-photo do .hero i odkomentuj <figure class="frame"> w HTML */
+  .hero.has-photo .hero-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);column-gap:72px;align-items:center;justify-items:start;text-align:left}
+  .hero.has-photo .hero-txt{align-items:flex-start}
+  .hero.has-photo .hero-logo{width:390px}
+  .hero.has-photo h1{font-size:60px}
   .frame{width:100%;max-width:400px;justify-self:end;padding:12px}
   .entries{display:grid;grid-template-columns:repeat(4,1fr);margin-top:0;border-top:1px solid var(--line-2)}
   .entry{grid-template-columns:1fr;padding:30px 30px 34px 0;border-bottom:0;align-content:start}
@@ -179,7 +197,14 @@ main{overflow-x:clip;display:block}
   .entry small{grid-column:auto;grid-row:2;margin-top:8px}
   .entry .from{grid-row:3;margin-top:18px}
   .sec-t{font-size:40px;margin:90px 0 26px}
-  .band{margin-top:96px;padding:80px 0 84px}
+  .why{margin-top:96px;padding:88px 0 92px}
+  .why-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
+  .why h2{font-size:52px}
+  .why .why-lead{margin:0 0 6px;font-size:18px}
+  .why-list{grid-template-columns:repeat(3,1fr);gap:0 56px;margin-top:56px}
+  .why-list li,.why-list li:first-child{border-top:0;padding:0 0 44px}
+  .why-list b{font-size:28px}
+  .band{padding:80px 0 84px}
   .band .wrap{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start}
   .quotes{grid-template-columns:1fr 1fr;gap:44px;margin-top:0}
   .today{margin-top:72px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
@@ -284,6 +309,7 @@ main{overflow-x:clip;display:block}
   .scrim.on{opacity:1;visibility:visible;transition:opacity .3s}
 }
 /* ---------- bottom bar ---------- */
+#barCnt{white-space:nowrap}
 #bar{display:none}
 @media (max-width:999.98px){
   :root{--barH:64px}
@@ -322,13 +348,15 @@ main{overflow-x:clip;display:block}
 .about{display:grid;grid-template-areas:'a' 'fig' 'b';gap:32px}
 .about .ab-a{grid-area:a}.about figure{grid-area:fig}.about .txt{grid-area:b}
 .about figure{margin:0;position:relative}
-.about figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.duo{position:relative;padding-bottom:22%;margin:0}
+.duo .d1{width:74%;aspect-ratio:4/5;object-fit:cover;height:auto}
+.duo .d2{position:absolute;right:0;bottom:0;width:48%;aspect-ratio:1/1;object-fit:cover;height:auto;border:7px solid #fff;box-shadow:0 24px 40px -22px rgba(70,0,30,.5)}
 .about .txt p + p{margin-top:16px}
 .about .txt{font-size:16.5px}
 .about .big{font:360 24px/1.4 var(--serif);letter-spacing:-.01em;color:var(--ink);max-width:28ch}
 .pts{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line-2)}
 .pts li{padding:18px 0;border-bottom:1px solid var(--line-2);display:grid;grid-template-columns:34px 1fr;gap:0 10px}
-.pts .n{font:400 15px/1.6 var(--serif);color:var(--gold);font-variant-numeric:tabular-nums}
+.pts .n{font:500 15px/1.6 var(--serif);color:var(--mag-d);font-variant-numeric:tabular-nums}
 .pts b{font-weight:600;display:block}
 .pts span{color:var(--ink-2);font-size:15.5px}
 @media (min-width:1000px){
@@ -399,7 +427,6 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
-#barCnt{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -444,7 +471,7 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     <div class="hero-in">
       <div class="hero-txt">
         <svg class="hero-logo" viewBox="0 0 934 500" role="img" aria-label="Larina Beauty Salon"><use href="#logo"/></svg>
-        <h1>Salon kosmetyczny w&nbsp;Mińsku Mazowieckim</h1>
+        <h1>Salon kosmetyczny <span class="l2">w&nbsp;Mińsku Mazowieckim</span></h1>
         <p class="lead">Paznokcie, pedicure, rzęsy, brwi i makijaż permanentny. Kilka zabiegów podczas jednej wizyty, przy kawie.</p>
         <div class="ctas">
           <button class="btn btn-white" data-tab="menu">Ułóż wizytę</button>
@@ -452,7 +479,11 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
         </div>
         <div class="hero-meta"><span class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span>5,0 z 39 opinii na Google</div>
       </div>
-      <figure class="frame"><img src="img/salon-wnetrze.jpg" width="1000" height="1250" alt="Wnętrze salonu Larina: stanowiska do manicure, rośliny i różowo-biała ściana"></figure>
+      <!-- MIEJSCE NA ZDJĘCIE STARTU (klientka przyśle nowe zdjęcie):
+           1) wrzuć plik do img/, np. img/start.jpg (pion 4:5, ok. 1000 x 1250 px),
+           2) odkomentuj poniższą linię i dodaj klasę has-photo do <div class="hero">.
+      <figure class="frame"><img src="img/start.jpg" width="1000" height="1250" alt="Opis zdjęcia"></figure>
+      -->
     </div>
   </div>
 
@@ -466,10 +497,27 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     </div>
   </div>
 
+  <section class="why" aria-labelledby="h-why">
+    <div class="wrap">
+      <div class="why-head">
+        <h2 id="h-why">Dlaczego Larina</h2>
+        <p class="why-lead">Profesjonalizm i dobra atmosfera to nasz standard. Oto, na czym opieramy każdą wizytę.</p>
+      </div>
+      <ul class="why-list">
+        <li><b>Mamy za sobą <strong>ponad 30 szkoleń</strong></b><span>I dalej się szkolimy, żeby doskonalić się w fachu.</span></li>
+        <li><b><strong>8 lat</strong> doświadczenia i <strong>ponad 1000</strong> klientek</b><span>Paznokcie, pedicure, rzęsy, brwi i makijaż permanentny w jednym miejscu.</span></li>
+        <li><b><strong>Sterylność</strong> i top materiały</b><span>To podstawa każdego zabiegu, od manicure po makijaż permanentny.</span></li>
+        <li><b><strong>Ponad 500</strong> kolorów lakierów</b><span>Klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</span></li>
+        <li><b><strong>Kilka zabiegów</strong> podczas jednej wizyty</b><span>Dłonie, stopy, rzęsy i brwi za jednym razem. Przy kawie.</span></li>
+        <li><b><strong>5,0</strong> z 39 opinii na Google</b><span>I 100% poleca na Facebooku (25 opinii).</span></li>
+      </ul>
+    </div>
+  </section>
+
   <div class="band">
     <div class="wrap">
       <div>
-        <div class="rate-line"><b>5,0</b><span class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></span><span>39 opinii na Google</span></div>
+        <p class="band-t">Co mówią klientki</p>
         <button class="lnk" data-tab="opinie"><span>Wszystkie opinie</span><svg class="ic" aria-hidden="true"><use href="#arr"/></svg></button>
       </div>
       <div class="quotes">
@@ -509,7 +557,7 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
         <div class="card">
           <div class="sub on" data-subpanel="dlonie">
             <h3>Dłonie</h3>
-            <p class="intro">Ponad 300 kolorów lakierów. Możesz postawić na klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</p>
+            <p class="intro">Ponad 500 kolorów lakierów. Możesz postawić na klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</p>
             <ul class="items">
               <li><button class="it" data-id="d1" data-name="Manicure hybrydowy" data-price="140" aria-pressed="false"><span class="nm">Manicure hybrydowy</span><span class="ld"></span><span class="pr">140 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
               <li><button class="it" data-id="d2" data-name="Manicure żelowy" data-price="150" aria-pressed="false"><span class="nm">Manicure żelowy</span><span class="ld"></span><span class="pr">150 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
@@ -658,16 +706,21 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     <header class="ph"><h2 id="h-onas">O nas</h2></header>
     <div class="about">
       <p class="big ab-a">Czasem chcemy przygotować się na ważne wydarzenie, a czasem po prostu mamy ochotę zrobić coś dla siebie.</p>
-      <figure><img src="img/salon-polki.jpg" width="800" height="800" loading="lazy" alt="Złote półki z lakierami na ścianie w różowo-białą jodełkę"></figure>
+      <figure class="duo">
+        <img class="d1" src="img/salon-wnetrze.jpg" width="1000" height="1250" loading="lazy" alt="Wnętrze salonu Larina: stanowiska do manicure, rośliny i różowo-biała ściana">
+        <img class="d2" src="img/salon-polki.jpg" width="800" height="800" loading="lazy" alt="Złote półki z lakierami na różowo-białej ścianie">
+      </figure>
       <div class="txt">
         <p>U nas możesz zadbać o kilka rzeczy podczas jednej wizyty albo wybrać tylko ten zabieg, którego akurat potrzebujesz. Zajmujemy się stylizacją paznokci, pedicure, brwiami, rzęsami oraz makijażem permanentnym.</p>
         <p>Zależy nam na tym, żeby każda wizyta była spokojna i komfortowa. Chcemy, żebyś wyszła z salonu z efektem, który naprawdę Ci odpowiada, a nie z gotowym rozwiązaniem wybranym za Ciebie.</p>
-        <p>Mamy 8 lat doświadczenia i ponad 1000 klientek. W salonie pracują <span class="tbc">Larysa i Iryna</span>.</p>
+        <p>Mamy 8 lat doświadczenia i ponad 1000 klientek. Mamy za sobą ponad 30 szkoleń i dalej się szkolimy, żeby doskonalić się w fachu. W salonie pracują <span class="tbc">Larysa i Iryna</span>.</p>
         <ul class="pts">
-          <li><span class="n">01</span><div><b>Sterylność i top materiały</b><span>Profesjonalizm i dobra atmosfera to nasz standard.</span></div></li>
-          <li><span class="n">02</span><div><b>Ponad 300 kolorów lakierów</b><span>Klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</span></div></li>
-          <li><span class="n">03</span><div><b>Kilka zabiegów podczas jednej wizyty</b><span>Dłonie, stopy, rzęsy i brwi za jednym razem albo tylko jeden zabieg.</span></div></li>
-          <li><span class="n">04</span><div><b>Przy kawie</b><span>Przy kawie doradzimy kolor, kształt i zabieg.</span></div></li>
+          <li><span class="n">01</span><div><b>Ponad 30 szkoleń</b><span>I ciągle kolejne. Szkolimy się, żeby doskonalić się w fachu.</span></div></li>
+          <li><span class="n">02</span><div><b>8 lat doświadczenia, ponad 1000 klientek</b><span>Paznokcie, pedicure, rzęsy, brwi i makijaż permanentny w jednym miejscu.</span></div></li>
+          <li><span class="n">03</span><div><b>Sterylność i top materiały</b><span>Profesjonalizm i dobra atmosfera to nasz standard.</span></div></li>
+          <li><span class="n">04</span><div><b>Ponad 500 kolorów lakierów</b><span>Klasyczny kolor, delikatne zdobienia albo coś bardziej wyrazistego.</span></div></li>
+          <li><span class="n">05</span><div><b>Kilka zabiegów podczas jednej wizyty</b><span>Dłonie, stopy, rzęsy i brwi za jednym razem albo tylko jeden zabieg.</span></div></li>
+          <li><span class="n">06</span><div><b>Przy kawie</b><span>Przy kawie doradzimy kolor, kształt i zabieg.</span></div></li>
         </ul>
       </div>
     </div>
