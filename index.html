@@ -27,7 +27,7 @@
 :root{
   --bg:#FFF0F6; --paper:#FFFFFF; --rose:#FFD9E9; --rose-l:#FFE6F0; --mag:#E0157A; --mag-d:#C40E62; --band:#D6106E;
   --gold:#C40E62; --ink:#2A1A22; --ink-2:#6B5360; --line:#F6D6E4; --line-2:#EEC0D4;
-  --tbc:#FFEB8A;
+  --tbc:transparent;
   --serif:'Fraunces', Georgia, 'Times New Roman', serif;
   --sans:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --navH:51px; --barH:0px; --gut:20px;
@@ -42,7 +42,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 h1,h2,h3{font-family:var(--serif);font-weight:380;letter-spacing:-.015em;margin:0;font-optical-sizing:auto}
 p{margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
-.tbc{background:var(--tbc);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .2em;border-radius:2px}
+.tbc{background:var(--tbc)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .tnum{font-variant-numeric:tabular-nums}
 svg.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -542,7 +542,6 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     <header class="ph">
       <h2 id="h-menu">Menu salonu</h2>
       <p>Jeśli nie wiesz jeszcze, na co się zdecydować, opowiedz nam, jaki efekt chciałabyś uzyskać, a wspólnie wybierzemy odpowiednią opcję.</p>
-      <p class="tbc-line"><span class="tbc">Cennik z grafiki sprzed ok. 2 lat, do potwierdzenia</span></p>
     </header>
     <div class="menu-grid">
       <div>
