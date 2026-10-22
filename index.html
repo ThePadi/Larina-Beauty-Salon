@@ -399,6 +399,7 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+#barCnt{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -559,8 +560,8 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
             <p class="grp">Permanentny</p>
             <p class="intro">Przy makijażu permanentnym najpierw omawiamy kształt i efekt.</p>
             <ul class="items">
-              <li><button class="it" data-id="m2" data-name="Makijaż permanentny brwi" data-price="400" aria-pressed="false"><span class="nm">Permanentny brwi</span><span class="ld"></span><span class="pr">400 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
-              <li><button class="it" data-id="m3" data-name="Makijaż permanentny ust" data-price="300" aria-pressed="false"><span class="nm">Permanentny ust</span><span class="ld"></span><span class="pr">300 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="m2" data-name="Makijaż permanentny brwi" data-price="500" aria-pressed="false"><span class="nm">Permanentny brwi</span><span class="ld"></span><span class="pr">500 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
+              <li><button class="it" data-id="m3" data-name="Makijaż permanentny ust" data-price="550" aria-pressed="false"><span class="nm">Permanentny ust</span><span class="ld"></span><span class="pr">550 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
               <li><button class="it" data-id="m4" data-name="Makijaż permanentny kreski" data-price="200" aria-pressed="false"><span class="nm">Permanentny kreski</span><span class="ld"></span><span class="pr">200 zł</span><span class="add"><svg class="pl" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg><svg class="ok" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span></button></li>
             </ul>
           </div>
@@ -632,11 +633,12 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     <div class="subs" role="tablist" aria-label="Kategorie realizacji">
       <button class="subtab" role="tab" data-sub="wszystkie" aria-selected="true">Wszystkie</button>
       <button class="subtab" role="tab" data-sub="paznokcie" aria-selected="false">Paznokcie</button>
-      <button class="subtab" role="tab" data-sub="twarz" aria-selected="false">Rzęsy, brwi, usta</button>
+      <button class="subtab" role="tab" data-sub="twarz" aria-selected="false">Rzęsy, brwi, makijaż</button>
     </div>
     <div class="gal" id="gal">
       <button class="gi" data-cat="paznokcie"><img src="img/p-french-brokat.jpg" width="1000" height="1250" loading="lazy" alt="Długie migdałowe paznokcie, nude z brokatowym frenchem"></button>
       <button class="gi" data-cat="twarz"><img src="img/t-brwi-pmu.jpg" width="1000" height="1250" loading="lazy" alt="Makijaż permanentny brwi"></button>
+      <button class="gi" data-cat="twarz"><img src="img/t-makijaz-wieczorowy.jpg" width="736" height="920" loading="lazy" alt="Makijaż wieczorowy"></button>
       <button class="gi" data-cat="paznokcie"><img src="img/p-malinowy-brokat.jpg" width="1000" height="1250" loading="lazy" alt="Malinowe paznokcie z brokatem"></button>
       <button class="gi" data-cat="paznokcie"><img src="img/p-french-pudrowy.jpg" width="750" height="937" loading="lazy" alt="Krótkie paznokcie, pudrowy french"></button>
       <button class="gi" data-cat="paznokcie"><img src="img/p-nude-chrom.jpg" width="1000" height="1250" loading="lazy" alt="Kwadratowe paznokcie w beżowym odcieniu z połyskiem"></button>
@@ -646,7 +648,6 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
       <button class="gi" data-cat="paznokcie"><img src="img/p-czern-zdobienie.jpg" width="750" height="937" loading="lazy" alt="Czarne paznokcie ze zdobieniem"></button>
       <button class="gi" data-cat="twarz"><img src="img/t-usta-pmu.jpg" width="563" height="703" loading="lazy" alt="Makijaż permanentny ust"></button>
       <button class="gi" data-cat="paznokcie"><img src="img/p-french-klasyczny.jpg" width="1000" height="1250" loading="lazy" alt="Klasyczny biały french na paznokciach"></button>
-      <button class="gi" data-cat="paznokcie"><img src="img/p-ombre-roz.jpg" width="563" height="703" loading="lazy" alt="Paznokcie ombre w odcieniach różu"></button>
     </div>
   </div>
 </section>
@@ -908,7 +909,7 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;text-decorat
     wa.setAttribute('aria-disabled', n ? 'false' : 'true');
     sms.setAttribute('aria-disabled', n ? 'false' : 'true');
     bar.classList.toggle('has', n > 0);
-    $('#barCnt').textContent = 'Twoja wizyta · ' + n + ' · ' + t + ' zł';
+    $('#barCnt').textContent = 'Wizyta · ' + n + ' · ' + t + ' zł';
     var nc = $('#navCta'); nc.classList.toggle('has', n > 0); $('#navCnt').textContent = n;
   }
   function toggle(btn){
